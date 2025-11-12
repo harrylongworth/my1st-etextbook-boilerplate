@@ -27,11 +27,14 @@ Project Backlog:
 - [ ] Convert to ePub process improvement.
 - [ ] Add pandoc version of Markdown explanations / additions.
 - [ ] Pdf export test.
-- [ ] LaTeX esport test.
+- [ ] LaTeX export test.
 
-Inprogress:
+In Progress:
 
 v0.1.3
+
+- [x] Remove Markdown and VS Code and stick to original scope of work!
+- [x] Modified author and publisher images to make generic.
 
 DONE!
 

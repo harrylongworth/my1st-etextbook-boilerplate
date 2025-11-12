@@ -13,11 +13,12 @@ tags:
 Front matter included below as suggested by Kindle Create for template purposes.
 
 <center>
-## Title Page {.unnumbered}
+
+# Title Page {.unnumbered}
 
 **My1st eTextbook Boilerplate in 2025:**
 
-Ebook Textbook Template, Boilerplate and Example Document Structuring using Markdown, VSCode, Pandoc and Github for Kindle Self Publishing
+Ebook Textbook Template, Boilerplate and Example Document Structuring using Pandoc and Github for Kindle Self Publishing
 
 v0.1.3 Edition (Alpha Testing)
 
@@ -28,9 +29,10 @@ by Harry Longworth
 Publisher
 
 ![Publisher](media/publisher.png)
+
 </center>
 
-## Copyright {.unnumbered}
+# Copyright {.unnumbered}
 
 My1st eTextbook Boilerplate in 2025
 
@@ -63,23 +65,23 @@ You might also want to add other legal content here. For example:
 
 **Legal Disclaimer:** All care taken, but no responsibility.  You use the information and advice in this document at your own risk!
 
-## Feedback {.unnumbered}
+# Feedback {.unnumbered}
 
 Please provide and feedback or issues encountered with this work via the contact form on the author's website:
 
 [Harry Longworth](https://harrylongworth.com)
 
-## Dedication {.unnumbered}
+# Dedication {.unnumbered}
 
 To our family! Thank you for supporting us in the creation of this work.
 
-## Foreword {.unnumbered}
+# Foreword {.unnumbered}
 
 A foreword should be written by someone other than the Author.  
 
 As this is a brand new project no such someone exists.  If you would like to volunteer to be that person drop me a line.
 
-## Preface {.unnumbered}
+# Preface {.unnumbered}
 
 Why you wrote this book. I wrote this because I have a wide range of technical content to publish and this is the logical place to start with go live for all that work.  
 
@@ -93,17 +95,17 @@ Harry Longworth
 
 As I write this, thousands of authors around the world are creating content to share with others and make the world a better place.  The focus of this guide is technical content rather than fiction, but it can still apply to fiction if you choose.
 
-## Introduction {.unnumbered}
+# Introduction {.unnumbered}
 
 Kindle Create suggests the use of an Introduction for non fiction books in the front matter as separate from the content.  Not sure why but lets give it a go.
 
-### Who and Why? {.unnumbered}
+## Who and Why? {.unnumbered}
 
 Start with your audience in mind, and the problem they have that would compel them to pay to read your book.
 
 For instance this guide is for technical writers, not fiction writers.  i.e. you are working on a textbook or how to guide, not a romance novel.
 
-### In Scope {.unnumbered}
+## In Scope {.unnumbered}
 
 Be clear up front on What will your book cover.
 
@@ -118,33 +120,33 @@ For example, this one will cover:
   - Body formatting.
   - End Matter.
 - Content and structure derived from Kindle Create as a starting point.
-- Basic tool use.
-- Basic Markdown syntax.
-- How to test!
+- How to use Pandoc for conversion.
+- How to test the results.
 
-### Out of Scope {.unnumbered}
+In short the aim is to create a github repo that can be cloned as the starting point for the creation of each textbook and guide in the series.
+
+## Out of Scope {.unnumbered}
 
 What won't your book cover! Just as important.
 
 This document will not cover:
 
+- Installation of tools.
 - The HTML format.
 - the ePub format.
 - LaTex format.
 - PDF format.
 - How to use MS Word.
-- how to use Pandoc.
-- how to use Kindle Create or Preview.
-- Installation of tools.
+- How to use Kindle Create or Preview.
 - Kindle publishing.
 
-### Prerequisites {.unnumbered}
+## Prerequisites {.unnumbered}
 
 What do you expect your reader to already know.  
 
 I expect readers of this guide to have a technical background.
 
-### Outline {.unnumbered}
+## Outline {.unnumbered}
 
 Provide a quick outline of your book content.  This content should align with your TOC.
 
@@ -321,8 +323,6 @@ So have to do an intermediate .md file creation!
 
 and then commands above without the toc components
 
-
-
 # TESTING
 
 How do we test this works?
@@ -375,25 +375,16 @@ Check my LinkedIn Profile for more information and my credentials:
 
 <https://www.linkedin.com/in/harry-longworth-amhazing/>
 
-[Author](media/author.png)
+<center>
+
+![Author](media/author.png)
+
+</center>
 
 ## Resources and Links {-}
 
-### Markdown {-}
-
 Markdown creator's website:  
 [John Gruber's Website](https://daringfireball.net/projects/markdown/)
-
-First Google search return result on Markdown guide:
-[markdownguide.org](https://www.markdownguide.org/getting-started/)
-
-Pandoc version of Markdown:
-[Pandoc on Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown)
-
-### VS Code {-}
-
-VS Code Enhanced Markdown Preview Extension:
-[Enhanced Markdown Preview on Github](https://shd101wyy.github.io/markdown-preview-enhanced)
 
 ## References {-}
 
@@ -414,14 +405,16 @@ Thank you for reading this far!
 
 ## Books by this Author {-}
 
-See the My1st.org website for current books in this series.
+This is the first.
 
 ## Books in this Series {-}
 
-See the My1st.org website for current books in this series.
+See the My1st.org website for the future books in this series.
 
 ## Acknowledgement {-}
 
 Without the work of open source creators around the world this work would not have been possible! Thank you.
 
 # APPENDIX A - Pandoc Cheat Sheet {-}
+
+To do.

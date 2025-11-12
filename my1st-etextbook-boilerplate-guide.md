@@ -24,11 +24,9 @@ Status: DRAFT
 
 by Harry Longworth
 
-Amhazing Pty Ltd
+Publisher
 
-`<Publisher Logo Image> here`
-
-[![Amhazing Pty Ltd](media/amhazing-name-logo.png)](https://amhazing.com "Amhazing")
+![Publisher](media/publisher.png)
 
 ## Contents {.unnumbered}
 
@@ -116,7 +114,7 @@ Amhazing Pty Ltd
   - [Books by this Author](#books-by-this-author)
   - [Books in this Series](#books-in-this-series)
   - [Acknowledgement](#acknowledgement)
-- [Appendix A - Markdown Cheat Sheet](#appendix-a---markdown-cheat-sheet)
+- [Appendix A - Pandoc Cheat Sheet](#appendix-a---pandoc-cheat-sheet)
 
 <!-- /code_chunk_output -->
 
@@ -957,6 +955,8 @@ Leads to the question of how we skip headings for the front matter though and to
 
 As a result of the adoption of this approach the word Chapter was removed from headings.
 
+
+
 ### Heading Depth
 
 You can control the depth of heading with the addition of this command to the prompt:
@@ -965,6 +965,10 @@ You can control the depth of heading with the addition of this command to the pr
 
 In this case explore a depth of four with an update to our prompt:
 > `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-numbered-4.docx --number-sections --toc-depth=4`
+
+ePub version of this export:
+
+> `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-depth4.epub --standalone --metadata-file=metadata.yaml --epub-cover-image=cover.png --number-sections --toc-depth=4`
 
 ### Skip Numbering
 
@@ -1040,9 +1044,7 @@ Check my LinkedIn Profile for more information and my credentials:
 
 <https://www.linkedin.com/in/harry-longworth-amhazing/>
 
-`<Author Image>` required by Kindle Create so here's mine as an example:
-
-[![Harry Longworth](media/harry-longworth.jpg)](https://harrylongworth.com "Harry Longworth")
+[Author](media/author.png)
 
 ## Resources and Links {-}
 
@@ -1091,33 +1093,4 @@ See the My1st.org website for current books in this series.
 
 Without the work of open source creators around the world this work would not have been possible! Thank you.
 
-# Appendix A - Markdown Cheat Sheet {-}
-
-Markdown Cheat sheet provided as an example of an Appendix:
-
-| Symbol  |  Result | Details
-| ------ | ------ | ------ | 
-| \# or \#\# | Heading | [Headings](#headings--and-) |
-| \\ | Escape Symbols | [Escape](#escape-symbol-)|
-| \* , \- , \+  | Bullet Lists | [Bullets](#bullets-with----and-_) |
-| Tab or 4 spaces  | Multi level List | [Multi level list](#multi-level-list) |
-| 1\. | Numbered List | [Numbered Lists](#numbered-lists-1) |
-| \*\* | Bold | [Bold](#bold--) |
-| \_  Underscore | Italics | [Italics](#italics--_) |
-| \> | Block Quote | [Block Quote/Indent](#block-quote--) |
-| \` Backtick | Code | [CODE](#code--) |
-| `--- , * * * , ___` | HR | [Horizontal line - HR](#horizontal-line----) |
-| space x 2 | Manual line break | [Manual line break](#manual-line-break) |
-| tab | indent | [Indent](#indent) |
-| `[text](url)` | Link | [Links](#links---or-) |
-| `! [text](url)` | Image | [Images](#images-) |
-| `<center>` | center | [Text Alignment](#text-alignment-center) |
-| \~\~ | Strikethrough | [Strikethrough](#strikethrough-) |
-| `- [x]` | Checkbox | [To Do List Checkboxes](#to-do-list-checkboxes---x) |
-| `<mark>` | Highlight | [Highlighting](#highlighting-mark) |
-| `[^1]` | Footnote | [Footnotes](#footnotes-1) |
-| `[]: #` | Hidden comment | [Comments `[]: #`](#comments--) |
-
-Markdownguide.org has a good cheat sheet too:
-
-[https://www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/)
+# Appendix A - Pandoc Cheat Sheet {-}

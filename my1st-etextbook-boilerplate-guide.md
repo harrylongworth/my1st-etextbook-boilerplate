@@ -1,17 +1,18 @@
 ---
 title: "My1st eTextbook Boilerplate"
 author: Harry Longworth
-date: 2025-11-12
+date: 12 Nov 2025
 layout: eBook
 tags:
   - markdown
   - yaml
   - metadata
 ---
-# Front Matter {.unnumbered}
+# FRONT MATTER {.unnumbered}
 
-Front matter content as suggested by Kindle Create.
+Front matter included below as suggested by Kindle Create for template purposes.
 
+<center>
 ## Title Page {.unnumbered}
 
 **My1st eTextbook Boilerplate in 2025:**
@@ -27,104 +28,7 @@ by Harry Longworth
 Publisher
 
 ![Publisher](media/publisher.png)
-
-## Contents {.unnumbered}
-
-[TOC]: # (Use VS Code extension to generate TOC - e.g. Enhanced Markdown Preview)
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Front Matter](#front-matter)
-  - [Title Page](#title-page)
-  - [Contents](#contents)
-  - [Copyright](#copyright)
-  - [Feedback](#feedback)
-  - [Dedication](#dedication)
-  - [Foreword](#foreword)
-  - [Preface](#preface)
-    - [Boilerplate](#boilerplate)
-  - [Introduction](#introduction)
-    - [Who and Why?](#who-and-why)
-    - [In Scope](#in-scope)
-    - [Out of Scope](#out-of-scope)
-    - [Prerequisites](#prerequisites)
-    - [Outline](#outline)
-- [START HERE](#start-here)
-  - [Legacy of Paper](#legacy-of-paper)
-- [MARKDOWN](#markdown)
-  - [MARKDOWN SYNTAX](#markdown-syntax)
-  - [Headings `#` and `##`](#headings--and-)
-  - [Escape Symbol `\`](#escape-symbol-)
-  - [Bullets with `#`, `-` and `_`](#bullets-with----and-_)
-  - [Multi level list](#multi-level-list)
-  - [Numbered Lists `1.`](#numbered-lists-1)
-  - [Bold  `**`](#bold--)
-  - [Italics  `_`](#italics--_)
-  - [Block Quote  `>`](#block-quote--)
-  - [CODE  \`](#code--)
-  - [Other Code formats](#other-code-formats)
-  - [Alert/code](#alertcode)
-  - [Horizontal line `---`](#horizontal-line--)
-  - [Manual line break](#manual-line-break)
-  - [Indent](#indent)
-  - [Tables `|x|x|x|`](#tables-xxx)
-  - [Table Text Alignment](#table-text-alignment)
-  - [Table Caption](#table-caption)
-  - [Links = `<>` or ``](#links---or-)
-  - [Reference Style Links](#reference-style-links)
-  - [Images `![]()`](#images-)
-  - [EXTENDED MARKDOWN](#extended-markdown)
-    - [Underlining](#underlining)
-    - [Text Alignment `<center>`](#text-alignment-center)
-    - [Color](#color)
-    - [Strikethrough `~~`](#strikethrough-)
-    - [To Do List Checkboxes `- [x]`](#to-do-list-checkboxes---x)
-    - [Highlighting `<mark>`](#highlighting-mark)
-    - [Subscript](#subscript)
-    - [Footnotes ``](#footnotes-1)
-    - [Table of Contents](#table-of-contents)
-      - [VS Code Extension approach](#vs-code-extension-approach)
-      - [Another TOC Way](#another-toc-way)
-    - [Comments `[//]: #`](#comments--)
-  - [Pandoc Markdown](#pandoc-markdown)
-  - [Conventions](#conventions)
-    - [Formatting](#formatting)
-    - [Language](#language)
-- [PANDOC CONVERSION](#pandoc-conversion)
-  - [Pandoc version of Markdown](#pandoc-version-of-markdown)
-  - [ePub Conversion](#epub-conversion)
-  - [MS Word docx Conversion](#ms-word-docx-conversion)
-  - [Auto Section Numbering](#auto-section-numbering)
-    - [Heading Depth](#heading-depth)
-    - [Skip Numbering](#skip-numbering)
-    - [Appendix Lettering](#appendix-lettering)
-- [TESTING](#testing)
-  - [Kindle Create Testing](#kindle-create-testing)
-  - [Kindle Preview Testing](#kindle-preview-testing)
-- [END Matter](#end-matter)
-  - [About the Author](#about-the-author)
-  - [Resources and Links](#resources-and-links)
-    - [Markdown](#markdown-1)
-    - [VS Code](#vs-code)
-  - [References](#references)
-  - [Praise for the Author](#praise-for-the-author)
-  - [Review This book please](#review-this-book-please)
-  - [Books by this Author](#books-by-this-author)
-  - [Books in this Series](#books-in-this-series)
-  - [Acknowledgement](#acknowledgement)
-- [Appendix A - Pandoc Cheat Sheet](#appendix-a---pandoc-cheat-sheet)
-
-<!-- /code_chunk_output -->
-
-Table of Tables
-
-Table of Figures
-
-Table of Equations
-
-Table of Symbols
+</center>
 
 ## Copyright {.unnumbered}
 
@@ -136,9 +40,9 @@ In this case see refer to the Creative Commons license file in the git.
 
 **Kindle Create version:**
 
-Example of content suggested by Kindle Create for his section:
+Below is an example of the copyright text suggested when you use Kindle Create:
 
-> Start:
+---
 
 All rights reserved.
 
@@ -153,7 +57,7 @@ Cover design by: Harry Longworth
 Library of Congress Control Number: TBA
 Printed in the United States of America
 
-> END Kindle Create suggestion.
+---
 
 You might also want to add other legal content here. For example:
 
@@ -188,20 +92,6 @@ I hope it serves you well!
 Harry Longworth
 
 As I write this, thousands of authors around the world are creating content to share with others and make the world a better place.  The focus of this guide is technical content rather than fiction, but it can still apply to fiction if you choose.
-
-### Boilerplate {.unnumbered}
-
-What is boilerplate? It's a technical writer term for the sort of content that every document should, or needs, to have in it.  It is the difference between a quick jotted how to guide and a polished professional document - that hopefully - you expect to get paid for.
-
-To quote Google Gemini:
-
->The term "boilerplate" generally refers to standardized, reusable text, language, or code that can be used in various documents or applications with little or no change
-
-If you come from a programming background, you can consider this my "abstract class" or interface definition. It doesn't instantiate the actual working classes, it provides a high level definition of the interface that I expect most of my textbooks to meet.
-
-This template is the starting point document I use for my eBook textbooks.
-
-I expect it to evolve over time. So stay tuned for version updates!
 
 ## Introduction {.unnumbered}
 
@@ -260,9 +150,23 @@ Provide a quick outline of your book content.  This content should align with yo
 
 # START HERE
 
-Chapter Quote Example: "Start with the End in Mind"
+"Start with the End in Mind"
 
 What should every eTextbook contain?
+
+## Boilerplate
+
+What is boilerplate? It's a technical writer term for the sort of content that every document should, or needs, to have in it.  It is the difference between a quick jotted how to guide and a polished professional document - that hopefully - you expect to get paid for.
+
+To quote Google Gemini:
+
+>The term "boilerplate" generally refers to standardized, reusable text, language, or code that can be used in various documents or applications with little or no change
+
+If you come from a programming background, you can consider this my "abstract class" or interface definition. It doesn't instantiate the actual working classes, it provides a high level definition of the interface that I expect most of my textbooks to meet.
+
+This template is the starting point document I use for my eBook textbooks.
+
+I expect it to evolve over time. So stay tuned for version updates!
 
 To answer this question I reviewed a whole bunch of physical and "virtual" textbooks from a range of publishers.
 
@@ -295,593 +199,6 @@ In contrast if we were heading towards a physical print document, then maybe you
 So what are the format capabilities we expect for modern electronic reflow textbooks?
 
 Lets start by exploring the use of Markdown.
-
-# MARKDOWN
-
-ePub is basically HTML and CSS.  But no one wants to think about writing HTML and CSS whilst trying to brain dump.
-
-That often leads us to using editors like MS Word.  But then the problem is we start to have too many options and get distracted into adding color to fonts for example.
-
-If you are a technical writer in the software development space you're then you will be using git.  And then because of that possibly GitHub.
-
-In that case the very first file you are expected to create is a Readme.md for your project.
-
-So in that space Markdown is the the go to text formatting convention.
-
-And you can also use it to create content for website generation and more.
-
-So to that end I focus on the use of Markdown for text content formatting and then in turn the challenges of conversion of that with Pandoc.
-
-You can grab the Markdown version of this document / template from the GitHub for this project.  See resources section at the end for the link.
-
-## MARKDOWN SYNTAX
-
-Whilst the Markdown is not the point of this book, I include the content below as an example of each of the various capabilities we expect to be able to show in an ePub eTextbook.
-
-Standard Markdown formatting syntax as discussed below is based on the creator's website as listed in the resources section.
-
-NOW - because we are going to be using Pandoc for conversion we need to also consider how pandoc handles Markdown which is discussed here:
-
-<https://pandoc.org/MANUAL.html#pandocs-markdown>
-
-Jump to the [Markdown Cheat Sheet](#appendix-a---markdown-cheat-sheet) if you just want a quick reminder of what symbol  to use for what when using Markdown formatting.
-
-## Headings `#` and `##`
-
-Atx-style headers use 1-6 hash characters at the start of the line, corresponding to header levels 1-6. For example:
-
-`#` for Heading 1
-
-`##` for heading 2
-
-_Note:_ I used backticks to escape the hash sign above!
-
-Increase the number of # to reduce heading level (up to 6)
-
-Optionally, you may “close” atx-style headers. This is purely cosmetic — you can use this if you think it looks better. The closing hashes don’t even need to match the number of hashes used to open the header. (The number of opening hashes determines the header level.) :
-
-Other type of heading format:  
-
-"Setext-style headers are “underlined” using equal signs (for first-level headers) and dashes (for second-level headers). "
-
-- Any number of underlining = signs or - signs will work. 
-
-> Heading 1
->`========`
-
-
-AND then:
-
-> Heading 2
-> `--------`
-
-BUT! How do we then hide these headings from the Table of contents or from auto numbering?
-
-I've removed the demo of the format from this document because of that issue. 
-
-**What about heading 3 with this approach?**
-
-- You don't?
-
-How many characters do we use so it knows the difference between a HR and a heading?
-
-**NOTE: I use the # heading approach because it makes it easier to re level headings and opens up level 3 headings. That and the auto numbering challenge.**
-
-## Escape Symbol `\`
-
-Symbols can be escaped with `\`
-
-For example this guide depends on the ability to escape the various markdown symbols so that they can be presented in the document.
-
-for example escape backtick: \` with ` \` `
-
-and escape tilda with `\~`
-
-Look through out this document in the markdown version for further examples.
-
-## Bullets with `#`, `-` and `_`
-
-can use standard * as list
-* foo
-* bar
-
-and can nest with tabs or multiple spaces (Four?)
-
-can also use `-` for bullets and lists
-
-- bullet point
-- and another
-
-## Multi level list
-
-Use tab or spaces to indent the additional levels of list.
-
-* Item one
-  * indented with tab.
-  * another with tab.
-* Shift tab to go back up a level
-    * four spaces indented version.
-
-## Numbered Lists `1.`
-
-Numbered lists can just use repeated 1. or any number followed by a full stop repeated
-
-for example:
-
->`1. foo`  
->`1. bar`
-
-results in:
-
-1. foo
-1. bar
-
-which makes auto/renumbering easier!
-
-**NOTE:** it's the full stop after the number that activates the numbered list.  So use a backslash to escape the full stop e.g. `\.` to prevent numbered list 
-
-## Bold  `**`
-
-'**' for bold at start and end of text to be formatted bold.
-
-`**This should be bold**`
-
-Looks like this:
-
-**This should be bold**
-
-- You do need to to start the text straight after the double stars - i.e. no space.
-
-## Italics  `_`
-
-Use `_` (underscore) for italic at the start and end
-
-for example: (see MD version)
-
-`_this is italic_`
-
-looks like this:
-
-_this is italic_
-
-**Can also use single `*` at start and end to format as italics.**
-
-## Block Quote  `>`
-
-Use `>` per line to have a block quote.
-
-Block quote example:
-
-`> Used for inset / quote style formatting`  
-`> and to have your text indented.`  
-`> I use double space after each line to force line breaks  ` 
-
-looks like this:
-
-> Used for inset / quote style formatting  
-> and to have your text indented.  
-> I use double space after each line to force line breaks  
-
-Markdown allows you to be lazy and only put the > before the first line of a hard-wrapped paragraph:
-
-## CODE  \`
-
-use back tick ` to mark out code so can display HTML and symbols etc.
-
-**NOTE:** This is not ' or " (i.e. not the ditto, or floating apostrophe keys) It's the shift \~ key on my keyboard.
-
-or if want shell style code formatting:
-
-` ```sh  
-
-for code excerpts
-like this
-
-if else where for while
-
-` ```
-
-Looks like this:
-
-```sh  
-
-for code excerpts
-like this 
-
-if else where for while
-
-
-```
-
-**WARNING!** Kindle create doesn't import block quotes in this format.
-
-Good news: Pandoc does recognize the convention though so should get through to an ePub format.
-
-## Other Code formats
-
-> \`\`\`json
-
-if you want the fenced code to be read as JSON format
- 
-
-## Alert/code
-
-
-\` Back tick is the key to the left of 1 on my keyboard.
-
-\` text inside single back tick is annotated\`
-
-and looks like this:
-
-`text inside single tick is annotated`
-
-I use backtick to escape markdown formatting throughout this document.
-
-I use backslash `\` to escape the backticks |:D 
-
-Not sure how effective that is accross platforms? 
-
-## Horizontal line `---`
-
-How do I get the typical HTML horizontal rule? `<HR>`
-
-Use 
-`---` 
-or
-`***`
-or
-`- - - `
-or `___` (underscore)
-
-to get this:
-
----
-
-which is equivalent to an HTML `<HR>`
-
-## Manual line break
-
-
-* end a line with two or more spaces 
-* handy for code examples etc.
-
-## Indent
-
-- use four spaces
-- or tab?
-
-
-## Tables `|x|x|x|`
-
-> `| Column 1  |  Col 2 |`  
-> `| ------ | ------ |`  
-> `| Row 1 | column 2 |`  
-> `| Row 2 | column 2 |` `
-
-looks like this:
-
-| Column 1  |  Col 2 |
-| ------ | ------ |
-| Row 1 | column 2 |
-| Row 2 | column 2 |
-
-There are way more variations on this subject to be explored!
-
-For example can I get background colour alternation?
-
-Can I force background colours and borders?
-
-## Table Text Alignment
-
-
-> `| Left | Middle | Right |`  
-> `| :---|:----:|---:|`  
-> `| Left|Centered|Right|`  
-> `| Aligned Left   | Aligned Middle| Aligned Right |`
-
-looks like: 
-
-| Left | Middle | Right |
-| :---|:---:|---:|
-| Left|Centered|Right|
-| Aligned Left   | Aligned Middle| Aligned Right |
-
-
-_Question:_ Altering the number of `-`  in the second formatting row results in what outcome? Does it increase column width?
-
-- - -
-
-## Table Caption
-
-Pandoc supports a table caption like this:
-
-> `Table:  Demonstration of simple table syntax`
-
-Example:
-
-> `Right     Left     Center     Default`
-> `-------     ------ ----------   -------`
-> `12     12        12            12`
-> `123     123       123          123`
-> `1     1          1             1`
-> Table:  Demonstration of simple table syntax
-
-Right     Left     Center     Default
--------     ------ ----------   -------
-12     12        12            12
-123     123       123          123
-1     1          1             1
-Table:  Demonstration of simple table syntax
-
-## Links = `<>` or `[]()`
-
-Some platforms will show a URL as a link just based on the format of the url for example:
-
-https://github.com
-
-which can be turned off with code backticks like this:
-
-> \`https://github.com\`  
-
-looks like this:
-
-`https://github.com`
-
-Can always just enclose in `< >` too.
-
-> `<https://github.com>`
-
-looks like:
-
-<https://github.com>
-
-**Markdown Link format:**
-
-Otherwise the format for a link is:
-
-> `[text label](URL)`
-
-for example:
-
-
-`[John's Website](https://daringfireball.net/projects/markdown/)`
-
-looks like this:
-
-[John's Website](https://daringfireball.net/projects/markdown/)
-
-**NOTE:**  important that there are no space between square brackets and link in brackets!
-
-Can have image links too.
-
-Can add a URL hover title:
-
-> `[text label](URL "title")`
-
-[text label](URL "title")
-
-_hover over the top to see the title text._
-
-## Reference Style Links
-
-Reference style label:
-
-An `[example][id]`. Then, anywhere
-else in the doc, define the link:
-
- `[id]: http://example.com/  "Title"`
-
-_Question:_ How would I refer to content in a github sub folder for example? eg. relative rather than absolute URLs?
-
-## Images `![]()`
-
-`![alt text](/path/img.jpg "Title")`
-
-or reference style
-
-`![alt text][id]`
-
-then later:
-`[id]: /url/to/img.jpg "Title"`
-
--------------------------------
-
-## EXTENDED MARKDOWN
-
-Source for most of this is the markdown guide Hacks page.
-
-Extended syntax might not be supported on all platforms.
-
-### Underlining
-
-Not included because in HTML underlining normally was a way of indicating a URL / link.
-
-### Text Alignment `<center>`
-
-Can I center text for example?
-
-**No.**
-
-Use HTML instead.  
-e.g. `<center>` tag which is depreciated.. so use css etc..
-
-<center>Does this work?</center>
-
-### Color
-
-Use HTML.
-
-### Strikethrough `~~`
-
-Use `~~`
-
-An extended feature though so maybe not supported everywhere? 
-
-An example of strikethrough:
-
->\~~Strike me!\~~
-
-looks like:
-
-> ~~Strike me!~~
-
-### To Do List Checkboxes `- [x]`
-
-to create a checkbox list on platforms that support the extended syntax:
-
->`- [x] Task that is checked`  
->`- [ ] Item that is not checked`  
->`- [ ] Item 3`
-
-looks like this:
-
-- [x] Task that is checked
-- [ ] Item that is not checked
-- [ ] Item 3
-  
-
-### Highlighting `<mark>`
-
-Either use the double equals like this `==`
-
-or the HTML `<mark>` tag
-
-`==Highlighted text==`
-
-looks like
-
-==Highlighted text==
-
-_Note:_ didn't work in VS Code.
-
-**HTML Approach:**
-
-`<mark>Marked Text</mark>`
-
-looks like 
-
-<mark>Marked Text</mark>
-
-_Note:_ Worked in VS Code.
-
-### Subscript
-
-use the `~` just a single one instead of strike through.
-
->`H~2~O`
-
-looks like this
-
-H~2~O
-
-_Note:_ Didn't work on VS Code
-
-### Footnotes `[^1]`
-
-Here's a sentence with a footnote. `[^1]`
-
-`[^1]`: This is the footnote.
-
-Looks like:
-
-Here's a sentence with a footnote. [^1]
-
-[^1]: This is the footnote.
-
-**Doesn't work in VS Code but does in Github.**
-
-What about more than one with the same number (i.e. `[^1]`) as we wouldn't want to have to individually number each footnote.
-
-Bad news there - you need to annotate with numbers unique to each one.
-
-Another footnote - footnote 2 [^2]
-
-[^2]: This is the second footnote.
-
-
-### Table of Contents
-
-#### VS Code Extension approach
-
-Use the VS Code All in one TOC creation from the command pallet (ctrl shift P)
-
-Details on the command pallet from Microsoft:
-
-[VS Code Command Pallet](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette)
-
-and use this to ommit a heading from the TOC:
-
-> `<!-- omit from toc -->`
-
-Which is what I did for the headings in the Headings section 
-
-#### Another TOC Way
-
-Problem with this approach is end up with the annotation in the heading if not supported?
-
-Depends on extended syntax?
-
-For example heading IDs:
-
-[Heading IDs](https://www.markdownguide.org/extended-syntax/#heading-ids)
-
-where you add the equivalent to the standard HTML anchor tag to your headings with curly braces.
-
-`### My Great Heading {#custom-id}`
-
-and then in the table:
-
-`[Heading IDs](#heading-ids)`
-
-### Comments `[//]: #`
-
-Comments that aren't to be shown in the final result can be marked as this:
-
-> `[comment]: #`
-
-Can't be seen (look at the markdown version to see comment below)
-
-[comment]: #
-
-[another comment here]: #
-
-If that doesn't work, alternatively this approach:
-
-`[//]: # (Comment text in here)`
-
-looks like:
-
-[//]: # (Comment text in here)
-
-## Pandoc Markdown
-
-see the Pandoc reference for the details:
-
-<https://pandoc.org/MANUAL.html#pandocs-markdown>
-
-For example pandoc provides for:
-
-- Small Caps font style.
-- More Table options.
-- Math extensions.
-
-Markdown allows raw HTML.  Some editors don't but since we are using pandoc for conversion it is more important that pandoc provides support than if the editor does.
-
-## Conventions
-
-Here are some example conventions for eTextbooks and the use of Markdown.
-
-### Formatting
-
-- I format chapter headings with all upper case so that I can see them during Kindle Create conversion testing.
-- Avoid underlining.  That's for hyper links.
-- Avoid comments in brackets - it breaks the flow and because we are focusing on Markdown brackets are used to indicate links and images.
-- avoid colored text.  It won't show very well on grayscale eInk devices.
-- Grayscale diagrams.  Same applies to pictures, figures and diagrams.  Plan for black and white.
-
-### Language
-
-If you are focused on Kindle publishing then you are probably focused on the US market. That means you should be using the English US dictionary as much as that might pain you.
 
 # PANDOC CONVERSION
 
@@ -917,7 +234,7 @@ lang: en-US
 
 Then use Pandoc to convert from markdown  to ePub:
 
-> `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output.epub --standalone --metadata-file=metadata.yaml --epub-cover-image=cover.png`
+> `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output.epub --standalone --epub-cover-image=cover.png`
 
 Warning! This document currently fails the Kindle Preview import.
 
@@ -955,8 +272,6 @@ Leads to the question of how we skip headings for the front matter though and to
 
 As a result of the adoption of this approach the word Chapter was removed from headings.
 
-
-
 ### Heading Depth
 
 You can control the depth of heading with the addition of this command to the prompt:
@@ -968,7 +283,7 @@ In this case explore a depth of four with an update to our prompt:
 
 ePub version of this export:
 
-> `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-depth4.epub --standalone --metadata-file=metadata.yaml --epub-cover-image=cover.png --number-sections --toc-depth=4`
+> `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-depth4.epub --standalone  --epub-cover-image=cover.png --number-sections --toc-depth=4`
 
 ### Skip Numbering
 
@@ -984,13 +299,29 @@ to the headings as done in this document for front and back matter.
 
 Pandoc recommend the `{-}` version of the tag.
 
-### Appendix Lettering
+> `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-depth4.epub --standalone --epub-cover-image=cover.png --number-sections --toc-depth=4`
 
-For an appendix where you want letters instead of numbers use the tag:
+### Pandoc Generated TOC
 
-> `{Appendices}`
+add the command --toc to the conversion command.
 
-Do I apply to just the top heading in that section, or each heading in that section?
+MS Word
+
+> `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-numbered-toc.docx --standalone --number-sections --toc --toc-depth=4`
+
+ePub
+
+> `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-depth-toc.epub --standalone --epub-cover-image=cover.png --number-sections --toc --toc-depth=4`
+
+But now the TOC has page numbers which we don't want for eBooks.
+
+So have to do an intermediate .md file creation!
+
+> `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-md-toc.md --standalone --number-sections --toc --toc-depth=4`
+
+and then commands above without the toc components
+
+
 
 # TESTING
 
@@ -1028,7 +359,7 @@ This document - v0.1 - fails test.  Kindle Preview doesn't import successfully a
 
 Testing in progress.
 
-# END Matter {-}
+# END MATTER {-}
 
 This is the sort of content that Kindle Create with the addition of Resources and References headings and Appendix.
 
@@ -1093,4 +424,4 @@ See the My1st.org website for current books in this series.
 
 Without the work of open source creators around the world this work would not have been possible! Thank you.
 
-# Appendix A - Pandoc Cheat Sheet {-}
+# APPENDIX A - Pandoc Cheat Sheet {-}

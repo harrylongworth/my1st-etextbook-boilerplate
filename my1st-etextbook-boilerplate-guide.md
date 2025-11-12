@@ -8,11 +8,11 @@ tags:
   - yaml
   - metadata
 ---
-# Front Matter
+# Front Matter {.unnumbered}
 
 Front matter content as suggested by Kindle Create.
 
-## Title Page
+## Title Page {.unnumbered}
 
 **My1st eTextbook Boilerplate in 2025:**
 
@@ -30,7 +30,7 @@ Amhazing Pty Ltd
 
 [![Amhazing Pty Ltd](media/amhazing-name-logo.png)](https://amhazing.com "Amhazing")
 
-## Contents
+## Contents {.unnumbered}
 
 [TOC]: # (Use VS Code extension to generate TOC - e.g. Enhanced Markdown Preview)
 
@@ -66,13 +66,14 @@ Amhazing Pty Ltd
   - [Italics  `_`](#italics--_)
   - [Block Quote  `>`](#block-quote--)
   - [CODE  \`](#code--)
-    - [Other Code formats](#other-code-formats)
+  - [Other Code formats](#other-code-formats)
   - [Alert/code](#alertcode)
   - [Horizontal line `---`](#horizontal-line--)
   - [Manual line break](#manual-line-break)
   - [Indent](#indent)
   - [Tables `|x|x|x|`](#tables-xxx)
   - [Table Text Alignment](#table-text-alignment)
+  - [Table Caption](#table-caption)
   - [Links = `<>` or ``](#links---or-)
   - [Reference Style Links](#reference-style-links)
   - [Images `![]()`](#images-)
@@ -89,13 +90,18 @@ Amhazing Pty Ltd
       - [VS Code Extension approach](#vs-code-extension-approach)
       - [Another TOC Way](#another-toc-way)
     - [Comments `[//]: #`](#comments--)
+  - [Pandoc Markdown](#pandoc-markdown)
   - [Conventions](#conventions)
     - [Formatting](#formatting)
     - [Language](#language)
 - [PANDOC CONVERSION](#pandoc-conversion)
+  - [Pandoc version of Markdown](#pandoc-version-of-markdown)
   - [ePub Conversion](#epub-conversion)
   - [MS Word docx Conversion](#ms-word-docx-conversion)
-  - [Section Numbering](#section-numbering)
+  - [Auto Section Numbering](#auto-section-numbering)
+    - [Heading Depth](#heading-depth)
+    - [Skip Numbering](#skip-numbering)
+    - [Appendix Lettering](#appendix-lettering)
 - [TESTING](#testing)
   - [Kindle Create Testing](#kindle-create-testing)
   - [Kindle Preview Testing](#kindle-preview-testing)
@@ -105,12 +111,12 @@ Amhazing Pty Ltd
     - [Markdown](#markdown-1)
     - [VS Code](#vs-code)
   - [References](#references)
-  - [Appendix A - Markdown Cheat Sheet](#appendix-a---markdown-cheat-sheet)
   - [Praise for the Author](#praise-for-the-author)
   - [Review This book please](#review-this-book-please)
   - [Books by this Author](#books-by-this-author)
   - [Books in this Series](#books-in-this-series)
   - [Acknowledgement](#acknowledgement)
+- [Appendix A - Markdown Cheat Sheet](#appendix-a---markdown-cheat-sheet)
 
 <!-- /code_chunk_output -->
 
@@ -122,7 +128,7 @@ Table of Equations
 
 Table of Symbols
 
-## Copyright
+## Copyright {.unnumbered}
 
 My1st eTextbook Boilerplate in 2025
 
@@ -155,23 +161,23 @@ You might also want to add other legal content here. For example:
 
 **Legal Disclaimer:** All care taken, but no responsibility.  You use the information and advice in this document at your own risk!
 
-## Feedback
+## Feedback {.unnumbered}
 
 Please provide and feedback or issues encountered with this work via the contact form on the author's website:
 
 [Harry Longworth](https://harrylongworth.com)
 
-## Dedication
+## Dedication {.unnumbered}
 
 To our family! Thank you for supporting us in the creation of this work.
 
-## Foreword
+## Foreword {.unnumbered}
 
 A foreword should be written by someone other than the Author.  
 
 As this is a brand new project no such someone exists.  If you would like to volunteer to be that person drop me a line.
 
-## Preface
+## Preface {.unnumbered}
 
 Why you wrote this book. I wrote this because I have a wide range of technical content to publish and this is the logical place to start with go live for all that work.  
 
@@ -185,7 +191,7 @@ Harry Longworth
 
 As I write this, thousands of authors around the world are creating content to share with others and make the world a better place.  The focus of this guide is technical content rather than fiction, but it can still apply to fiction if you choose.
 
-### Boilerplate
+### Boilerplate {.unnumbered}
 
 What is boilerplate? It's a technical writer term for the sort of content that every document should, or needs, to have in it.  It is the difference between a quick jotted how to guide and a polished professional document - that hopefully - you expect to get paid for.
 
@@ -199,17 +205,17 @@ This template is the starting point document I use for my eBook textbooks.
 
 I expect it to evolve over time. So stay tuned for version updates!
 
-## Introduction
+## Introduction {.unnumbered}
 
 Kindle Create suggests the use of an Introduction for non fiction books in the front matter as separate from the content.  Not sure why but lets give it a go.
 
-### Who and Why?
+### Who and Why? {.unnumbered}
 
 Start with your audience in mind, and the problem they have that would compel them to pay to read your book.
 
 For instance this guide is for technical writers, not fiction writers.  i.e. you are working on a textbook or how to guide, not a romance novel.
 
-### In Scope
+### In Scope {.unnumbered}
 
 Be clear up front on What will your book cover.
 
@@ -228,7 +234,7 @@ For example, this one will cover:
 - Basic Markdown syntax.
 - How to test!
 
-### Out of Scope
+### Out of Scope {.unnumbered}
 
 What won't your book cover! Just as important.
 
@@ -236,19 +242,21 @@ This document will not cover:
 
 - The HTML format.
 - the ePub format.
+- LaTex format.
+- PDF format.
 - How to use MS Word.
 - how to use Pandoc.
 - how to use Kindle Create or Preview.
 - Installation of tools.
 - Kindle publishing.
 
-### Prerequisites
+### Prerequisites {.unnumbered}
 
 What do you expect your reader to already know.  
 
 I expect readers of this guide to have a technical background.
 
-### Outline
+### Outline {.unnumbered}
 
 Provide a quick outline of your book content.  This content should align with your TOC.
 
@@ -284,6 +292,8 @@ For example if you want to maximize compatibility then you should drop the use o
 
 One of the other key expectations of screen reading content is shorter, sharper content.  We avoid large blocks of text!
 
+In contrast if we were heading towards a physical print document, then maybe you would consider PDF format as the goal, and content formatting and editing with a platform like LaTeX.
+
 So what are the format capabilities we expect for modern electronic reflow textbooks?
 
 Lets start by exploring the use of Markdown.
@@ -312,6 +322,10 @@ Whilst the Markdown is not the point of this book, I include the content below a
 
 Standard Markdown formatting syntax as discussed below is based on the creator's website as listed in the resources section.
 
+NOW - because we are going to be using Pandoc for conversion we need to also consider how pandoc handles Markdown which is discussed here:
+
+<https://pandoc.org/MANUAL.html#pandocs-markdown>
+
 Jump to the [Markdown Cheat Sheet](#appendix-a---markdown-cheat-sheet) if you just want a quick reminder of what symbol  to use for what when using Markdown formatting.
 
 ## Headings `#` and `##`
@@ -337,30 +351,23 @@ Other type of heading format:
 > Heading 1
 >`========`
 
-looks like:
-
-Heading 1 <!-- omit from toc --> {ignore=true}
-========
 
 AND then:
 
 > Heading 2
 > `--------`
 
-looks like:
+BUT! How do we then hide these headings from the Table of contents or from auto numbering?
 
-Heading 2 <!-- omit from toc --> {ignore=true}
---------
+I've removed the demo of the format from this document because of that issue. 
 
-But how get heading 3 with this approach?
+**What about heading 3 with this approach?**
 
 - You don't?
 
 How many characters do we use so it knows the difference between a HR and a heading?
 
-**NOTE: I use the # heading approach because it makes it easier to relevel headings and opens up level 3 headings.**
-
-That becomes more relevant with long documents where a [TOC](#table-of-contents-1) is essential!
+**NOTE: I use the # heading approach because it makes it easier to re level headings and opens up level 3 headings. That and the auto numbering challenge.**
 
 ## Escape Symbol `\`
 
@@ -488,7 +495,11 @@ if else where for while
 
 ```
 
-### Other Code formats
+**WARNING!** Kindle create doesn't import block quotes in this format.
+
+Good news: Pandoc does recognize the convention though so should get through to an ePub format.
+
+## Other Code formats
 
 > \`\`\`json
 
@@ -581,6 +592,28 @@ looks like:
 _Question:_ Altering the number of `-`  in the second formatting row results in what outcome? Does it increase column width?
 
 - - -
+
+## Table Caption
+
+Pandoc supports a table caption like this:
+
+> `Table:  Demonstration of simple table syntax`
+
+Example:
+
+> `Right     Left     Center     Default`
+> `-------     ------ ----------   -------`
+> `12     12        12            12`
+> `123     123       123          123`
+> `1     1          1             1`
+> Table:  Demonstration of simple table syntax
+
+Right     Left     Center     Default
+-------     ------ ----------   -------
+12     12        12            12
+123     123       123          123
+1     1          1             1
+Table:  Demonstration of simple table syntax
 
 ## Links = `<>` or `[]()`
 
@@ -822,6 +855,20 @@ looks like:
 
 [//]: # (Comment text in here)
 
+## Pandoc Markdown
+
+see the Pandoc reference for the details:
+
+<https://pandoc.org/MANUAL.html#pandocs-markdown>
+
+For example pandoc provides for:
+
+- Small Caps font style.
+- More Table options.
+- Math extensions.
+
+Markdown allows raw HTML.  Some editors don't but since we are using pandoc for conversion it is more important that pandoc provides support than if the editor does.
+
 ## Conventions
 
 Here are some example conventions for eTextbooks and the use of Markdown.
@@ -843,6 +890,12 @@ If you are focused on Kindle publishing then you are probably focused on the US 
 Pandoc is the tool I use to convert Markdown into eBooks in the form of an ePub that I can then upload to Kindle.
 
 There are multiple reasons to bypass Kindle Create and go straight to ePub format which I'll discuss elsewhere.
+
+## Pandoc version of Markdown
+
+Pandoc uses a slightly modified version of Markdown as explained here:
+
+<https://pandoc.org/MANUAL.html#pandocs-markdown>
 
 ## ePub Conversion
 
@@ -884,7 +937,7 @@ which for this document and github repo is:
 
 > `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output.docx`
 
-## Section Numbering
+## Auto Section Numbering
 
 One of the pain points encountered during testing of this document was auto Chapter numbering.
 
@@ -896,15 +949,44 @@ which for this document results in the word conversion like this:
 
 > `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-numbered.docx --number-sections`
 
-This gives us a great teired numbering format for headings so we can clearly illustrate heading depth to the reader.
+This gives us a great tiered numbering format for headings so we can clearly illustrate heading depth to the reader.
 
 I would recommend doing this.
 
-Leads to the question of how we skip headings for the front matter though?
+Leads to the question of how we skip headings for the front matter though and to what depth of heading?
 
 As a result of the adoption of this approach the word Chapter was removed from headings.
 
+### Heading Depth
 
+You can control the depth of heading with the addition of this command to the prompt:
+
+> `--toc-depth=2`
+
+In this case explore a depth of four with an update to our prompt:
+> `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-numbered-4.docx --number-sections --toc-depth=4`
+
+### Skip Numbering
+
+To prevent numbering of the Front and End Matter add the tag:
+
+> `{.unnumbered}`
+
+or perhaps
+
+>`{-}`
+
+to the headings as done in this document for front and back matter.
+
+Pandoc recommend the `{-}` version of the tag.
+
+### Appendix Lettering
+
+For an appendix where you want letters instead of numbers use the tag:
+
+> `{Appendices}`
+
+Do I apply to just the top heading in that section, or each heading in that section?
 
 # TESTING
 
@@ -942,11 +1024,11 @@ This document - v0.1 - fails test.  Kindle Preview doesn't import successfully a
 
 Testing in progress.
 
-# END Matter
+# END Matter {-}
 
 This is the sort of content that Kindle Create with the addition of Resources and References headings and Appendix.
 
-## About the Author
+## About the Author {-}
 
 Harry Longworth is the author of this work. My author website can be found here:
 
@@ -962,27 +1044,54 @@ Check my LinkedIn Profile for more information and my credentials:
 
 [![Harry Longworth](media/harry-longworth.jpg)](https://harrylongworth.com "Harry Longworth")
 
-## Resources and Links
+## Resources and Links {-}
 
-### Markdown
+### Markdown {-}
 
 Markdown creator's website:  
-[John Gruber's Website](https://daringfireball.net/projects/markdown/) 
+[John Gruber's Website](https://daringfireball.net/projects/markdown/)
 
 First Google search return result on Markdown guide:
 [markdownguide.org](https://www.markdownguide.org/getting-started/)
 
-### VS Code
+Pandoc version of Markdown:
+[Pandoc on Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown)
+
+### VS Code {-}
 
 VS Code Enhanced Markdown Preview Extension:
 [Enhanced Markdown Preview on Github](https://shd101wyy.github.io/markdown-preview-enhanced)
 
-## References
+## References {-}
 
 John Gruber's Syntax guide:  
 [daringfireball.net](https://daringfireball.net/projects/markdown/syntax)
 
-## Appendix A - Markdown Cheat Sheet
+## Praise for the Author {-}
+
+Insert your positive reviews here
+
+## Review This book please {-}
+
+Please review this book positively and widely if you liked it!  
+
+That's one of the best ways you can thank me for the hard work that went into putting this guide together.  
+
+Thank you for reading this far!
+
+## Books by this Author {-}
+
+See the My1st.org website for current books in this series.
+
+## Books in this Series {-}
+
+See the My1st.org website for current books in this series.
+
+## Acknowledgement {-}
+
+Without the work of open source creators around the world this work would not have been possible! Thank you.
+
+# Appendix A - Markdown Cheat Sheet {-}
 
 Markdown Cheat sheet provided as an example of an Appendix:
 
@@ -1012,30 +1121,3 @@ Markdown Cheat sheet provided as an example of an Appendix:
 Markdownguide.org has a good cheat sheet too:
 
 [https://www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/)
-
-## Praise for the Author
-
-Insert your positive reviews here
-
-## Review This book please
-
-Please review this book positively and widely if you liked it!  
-
-That's one of the best ways you can thank me for the hard work that went into putting this guide together.  
-
-Thank you for reading this far!
-
-## Books by this Author
-
-See the My1st.org website for current books in this series.
-
-## Books in this Series
-
-See the My1st.org website for current books in this series.
-
-
-
-## Acknowledgement
-
-Without the work of open source creators around the world this work would not have been possible! Thank you.
-

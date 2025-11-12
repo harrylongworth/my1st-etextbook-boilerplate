@@ -18,7 +18,7 @@ Front matter content as suggested by Kindle Create.
 
 Ebook Textbook Template, Boilerplate and Example Document Structuring using Markdown, VSCode, Pandoc and Github for Kindle Self Publishing
 
-v0.1 Edition (Alpha Testing)
+v0.1.2 Edition (Alpha Testing)
 
 Status: DRAFT
 
@@ -53,10 +53,10 @@ Amhazing Pty Ltd
     - [Out of Scope](#out-of-scope)
     - [Prerequisites](#prerequisites)
     - [Outline](#outline)
-- [CHAPTER 1: Start with the End in Mind](#chapter-1-start-with-the-end-in-mind)
+- [START HERE](#start-here)
   - [Legacy of Paper](#legacy-of-paper)
-- [CHAPTER 2: Markdown?](#chapter-2-markdown)
-- [CHAPTER 3: Markdown Syntax](#chapter-3-markdown-syntax)
+- [MARKDOWN](#markdown)
+  - [MARKDOWN SYNTAX](#markdown-syntax)
   - [Headings `#` and `##`](#headings--and-)
   - [Escape Symbol `\`](#escape-symbol-)
   - [Bullets with `#`, `-` and `_`](#bullets-with----and-_)
@@ -76,32 +76,33 @@ Amhazing Pty Ltd
   - [Links = `<>` or ``](#links---or-)
   - [Reference Style Links](#reference-style-links)
   - [Images `![]()`](#images-)
-- [CHAPTER ?: Extended Markdown Syntax](#chapter--extended-markdown-syntax)
-  - [Underlining](#underlining)
-  - [Text Alignment `<center>`](#text-alignment-center)
-  - [Colour](#colour)
-  - [Strikethrough `~~`](#strikethrough-)
-  - [To Do List Checkboxes `- [x]`](#to-do-list-checkboxes---x)
-  - [Highlighting `<mark>`](#highlighting-mark)
-  - [Subscript](#subscript)
-  - [Footnotes ``](#footnotes-1)
-  - [Table of Contents](#table-of-contents)
-    - [VS Code Extension approach](#vs-code-extension-approach)
-    - [Another TOC Way](#another-toc-way)
-  - [Comments `[//]: #`](#comments--)
-- [CHAPTER ?: Pandoc Conversion](#chapter--pandoc-conversion)
+  - [EXTENDED MARKDOWN](#extended-markdown)
+    - [Underlining](#underlining)
+    - [Text Alignment `<center>`](#text-alignment-center)
+    - [Color](#color)
+    - [Strikethrough `~~`](#strikethrough-)
+    - [To Do List Checkboxes `- [x]`](#to-do-list-checkboxes---x)
+    - [Highlighting `<mark>`](#highlighting-mark)
+    - [Subscript](#subscript)
+    - [Footnotes ``](#footnotes-1)
+    - [Table of Contents](#table-of-contents)
+      - [VS Code Extension approach](#vs-code-extension-approach)
+      - [Another TOC Way](#another-toc-way)
+    - [Comments `[//]: #`](#comments--)
+  - [Conventions](#conventions)
+    - [Formatting](#formatting)
+    - [Language](#language)
+- [PANDOC CONVERSION](#pandoc-conversion)
   - [ePub Conversion](#epub-conversion)
   - [MS Word docx Conversion](#ms-word-docx-conversion)
-- [CHAPTER 5: Conventions](#chapter-5-conventions)
-  - [Formatting](#formatting)
-  - [Language](#language)
-- [Chapter 6: Testing](#chapter-6-testing)
+  - [Section Numbering](#section-numbering)
+- [TESTING](#testing)
   - [Kindle Create Testing](#kindle-create-testing)
   - [Kindle Preview Testing](#kindle-preview-testing)
 - [END Matter](#end-matter)
   - [About the Author](#about-the-author)
   - [Resources and Links](#resources-and-links)
-    - [Markdown](#markdown)
+    - [Markdown](#markdown-1)
     - [VS Code](#vs-code)
   - [References](#references)
   - [Appendix A - Markdown Cheat Sheet](#appendix-a---markdown-cheat-sheet)
@@ -251,7 +252,9 @@ I expect readers of this guide to have a technical background.
 
 Provide a quick outline of your book content.  This content should align with your TOC.
 
-# CHAPTER 1: Start with the End in Mind
+# START HERE
+
+Chapter Quote Example: "Start with the End in Mind"
 
 What should every eTextbook contain?
 
@@ -285,7 +288,7 @@ So what are the format capabilities we expect for modern electronic reflow textb
 
 Lets start by exploring the use of Markdown.
 
-# CHAPTER 2: Markdown?
+# MARKDOWN
 
 ePub is basically HTML and CSS.  But no one wants to think about writing HTML and CSS whilst trying to brain dump.
 
@@ -303,7 +306,7 @@ So to that end I focus on the use of Markdown for text content formatting and th
 
 You can grab the Markdown version of this document / template from the GitHub for this project.  See resources section at the end for the link.
 
-# CHAPTER 3: Markdown Syntax
+## MARKDOWN SYNTAX
 
 Whilst the Markdown is not the point of this book, I include the content below as an example of each of the various capabilities we expect to be able to show in an ePub eTextbook.
 
@@ -652,17 +655,17 @@ then later:
 
 -------------------------------
 
-# CHAPTER ?: Extended Markdown Syntax
+## EXTENDED MARKDOWN
 
 Source for most of this is the markdown guide Hacks page.
 
 Extended syntax might not be supported on all platforms.
 
-## Underlining
+### Underlining
 
 Not included because in HTML underlining normally was a way of indicating a URL / link.
 
-## Text Alignment `<center>`
+### Text Alignment `<center>`
 
 Can I center text for example?
 
@@ -673,11 +676,11 @@ e.g. `<center>` tag which is depreciated.. so use css etc..
 
 <center>Does this work?</center>
 
-## Colour
+### Color
 
 Use HTML.
 
-## Strikethrough `~~`
+### Strikethrough `~~`
 
 Use `~~`
 
@@ -691,7 +694,7 @@ looks like:
 
 > ~~Strike me!~~
 
-## To Do List Checkboxes `- [x]`
+### To Do List Checkboxes `- [x]`
 
 to create a checkbox list on platforms that support the extended syntax:
 
@@ -706,7 +709,7 @@ looks like this:
 - [ ] Item 3
   
 
-## Highlighting `<mark>`
+### Highlighting `<mark>`
 
 Either use the double equals like this `==`
 
@@ -730,7 +733,7 @@ looks like
 
 _Note:_ Worked in VS Code.
 
-## Subscript
+### Subscript
 
 use the `~` just a single one instead of strike through.
 
@@ -742,7 +745,7 @@ H~2~O
 
 _Note:_ Didn't work on VS Code
 
-## Footnotes `[^1]`
+### Footnotes `[^1]`
 
 Here's a sentence with a footnote. `[^1]`
 
@@ -765,9 +768,9 @@ Another footnote - footnote 2 [^2]
 [^2]: This is the second footnote.
 
 
-## Table of Contents
+### Table of Contents
 
-### VS Code Extension approach
+#### VS Code Extension approach
 
 Use the VS Code All in one TOC creation from the command pallet (ctrl shift P)
 
@@ -781,7 +784,7 @@ and use this to ommit a heading from the TOC:
 
 Which is what I did for the headings in the Headings section 
 
-### Another TOC Way
+#### Another TOC Way
 
 Problem with this approach is end up with the annotation in the heading if not supported?
 
@@ -799,7 +802,7 @@ and then in the table:
 
 `[Heading IDs](#heading-ids)`
 
-## Comments `[//]: #`
+### Comments `[//]: #`
 
 Comments that aren't to be shown in the final result can be marked as this:
 
@@ -819,7 +822,23 @@ looks like:
 
 [//]: # (Comment text in here)
 
-# CHAPTER ?: Pandoc Conversion
+## Conventions
+
+Here are some example conventions for eTextbooks and the use of Markdown.
+
+### Formatting
+
+- I format chapter headings with all upper case so that I can see them during Kindle Create conversion testing.
+- Avoid underlining.  That's for hyper links.
+- Avoid comments in brackets - it breaks the flow and because we are focusing on Markdown brackets are used to indicate links and images.
+- avoid colored text.  It won't show very well on grayscale eInk devices.
+- Grayscale diagrams.  Same applies to pictures, figures and diagrams.  Plan for black and white.
+
+### Language
+
+If you are focused on Kindle publishing then you are probably focused on the US market. That means you should be using the English US dictionary as much as that might pain you.
+
+# PANDOC CONVERSION
 
 Pandoc is the tool I use to convert Markdown into eBooks in the form of an ePub that I can then upload to Kindle.
 
@@ -865,23 +884,29 @@ which for this document and github repo is:
 
 > `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output.docx`
 
-# CHAPTER 5: Conventions
+## Section Numbering
 
-Here are some example conventions for eTextbooks and the use of Markdown.
+One of the pain points encountered during testing of this document was auto Chapter numbering.
 
-## Formatting
+There is a facility in pandoc to do auto section numbering with the addition of this text to the command:
 
-- I format chapter headings with all upper case so that I can see them during Kindle Create conversion testing.
-- Avoid underlining.  That's for hyper links.
-- Avoid comments in brackets - it breaks the flow and because we are focusing on Markdown brackets are used to indicate links and images.
-- avoid colored text.  It won't show very well on grayscale eInk devices.
-- Grayscale diagrams.  Same applies to pictures, figures and diagrams.  Plan for black and white.
+> `--number-sections`
 
-## Language
+which for this document results in the word conversion like this:
 
-If you are focused on Kindle publishing then you are probably focused on the US market. That means you should be using the English US dictionary as much as that might pain you.
+> `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-numbered.docx --number-sections`
 
-# Chapter 6: Testing
+This gives us a great teired numbering format for headings so we can clearly illustrate heading depth to the reader.
+
+I would recommend doing this.
+
+Leads to the question of how we skip headings for the front matter though?
+
+As a result of the adoption of this approach the word Chapter was removed from headings.
+
+
+
+# TESTING
 
 How do we test this works?
 

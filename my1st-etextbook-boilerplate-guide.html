@@ -1,0 +1,958 @@
+<!DOCTYPE html><html><head>
+      <title>My1st eTextbook Boilerplate</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\harry\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.20\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      <div>
+<h1 id="front-matter" class="unnumbered">Front Matter </h1>
+<p>Front matter content as suggested by Kindle Create.</p>
+<h2 id="title-page" class="unnumbered">Title Page </h2>
+<p><strong>My1st eTextbook Boilerplate in 2025:</strong></p>
+<p>Ebook Textbook Template, Boilerplate and Example Document Structuring using Markdown, VSCode, Pandoc and Github for Kindle Self Publishing</p>
+<p>v0.1.2 Edition (Alpha Testing)</p>
+<p>Status: DRAFT</p>
+<p>by Harry Longworth</p>
+<p>Amhazing Pty Ltd</p>
+<p><code>&lt;Publisher Logo Image&gt; here</code></p>
+<p><a href="https://amhazing.com" title="Amhazing"><img src="media/amhazing-name-logo.png" alt="Amhazing Pty Ltd"></a></p>
+<h2 id="contents" class="unnumbered">Contents </h2>
+<div class="code-chunk" data-id="code-chunk-id-0" data-cmd="toc"><div class="input-div"><div class="code-chunk-btn-group"><div class="run-btn btn btn-xs btn-primary"><span>▶︎</span></div><div class="run-all-btn btn btn-xs btn-primary">all</div></div><div class="status">running...</div></div><div class="output-div"></div></div><ul>
+<li><a href="#front-matter">Front Matter</a>
+<ul>
+<li><a href="#title-page">Title Page</a></li>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#copyright">Copyright</a></li>
+<li><a href="#feedback">Feedback</a></li>
+<li><a href="#dedication">Dedication</a></li>
+<li><a href="#foreword">Foreword</a></li>
+<li><a href="#preface">Preface</a>
+<ul>
+<li><a href="#boilerplate">Boilerplate</a></li>
+</ul>
+</li>
+<li><a href="#introduction">Introduction</a>
+<ul>
+<li><a href="#who-and-why">Who and Why?</a></li>
+<li><a href="#in-scope">In Scope</a></li>
+<li><a href="#out-of-scope">Out of Scope</a></li>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#outline">Outline</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#start-here">START HERE</a>
+<ul>
+<li><a href="#legacy-of-paper">Legacy of Paper</a></li>
+</ul>
+</li>
+<li><a href="#markdown">MARKDOWN</a>
+<ul>
+<li><a href="#markdown-syntax">MARKDOWN SYNTAX</a></li>
+<li><a href="#headings--and-">Headings <code>#</code> and <code>##</code></a></li>
+<li><a href="#escape-symbol-">Escape Symbol <code>\</code></a></li>
+<li><a href="#bullets-with----and-_">Bullets with <code>#</code>, <code>-</code> and <code>_</code></a></li>
+<li><a href="#multi-level-list">Multi level list</a></li>
+<li><a href="#numbered-lists-1">Numbered Lists <code>1.</code></a></li>
+<li><a href="#bold--">Bold  <code>**</code></a></li>
+<li><a href="#italics--_">Italics  <code>_</code></a></li>
+<li><a href="#block-quote--">Block Quote  <code>&gt;</code></a></li>
+<li><a href="#code--">CODE  `</a></li>
+<li><a href="#other-code-formats">Other Code formats</a></li>
+<li><a href="#alertcode">Alert/code</a></li>
+<li><a href="#horizontal-line--">Horizontal line <code>---</code></a></li>
+<li><a href="#manual-line-break">Manual line break</a></li>
+<li><a href="#indent">Indent</a></li>
+<li><a href="#tables-xxx">Tables <code>|x|x|x|</code></a></li>
+<li><a href="#table-text-alignment">Table Text Alignment</a></li>
+<li><a href="#table-caption">Table Caption</a></li>
+<li><a href="#links---or-">Links = `&lt;&gt;` or ``</a></li>
+<li><a href="#reference-style-links">Reference Style Links</a></li>
+<li><a href="#images-">Images <code>![]()</code></a></li>
+<li><a href="#extended-markdown">EXTENDED MARKDOWN</a>
+<ul>
+<li><a href="#underlining">Underlining</a></li>
+<li><a href="#text-alignment-center">Text Alignment <code>&lt;center&gt;</code></a></li>
+<li><a href="#color">Color</a></li>
+<li><a href="#strikethrough-">Strikethrough <code>~~</code></a></li>
+<li><a href="#to-do-list-checkboxes---x">To Do List Checkboxes <code>- [x]</code></a></li>
+<li><a href="#highlighting-mark">Highlighting <code>&lt;mark&gt;</code></a></li>
+<li><a href="#subscript">Subscript</a></li>
+<li><a href="#footnotes-1">Footnotes ``</a></li>
+<li><a href="#table-of-contents">Table of Contents</a>
+<ul>
+<li><a href="#vs-code-extension-approach">VS Code Extension approach</a></li>
+<li><a href="#another-toc-way">Another TOC Way</a></li>
+</ul>
+</li>
+<li><a href="#comments--">Comments <code>[//]: #</code></a></li>
+</ul>
+</li>
+<li><a href="#pandoc-markdown">Pandoc Markdown</a></li>
+<li><a href="#conventions">Conventions</a>
+<ul>
+<li><a href="#formatting">Formatting</a></li>
+<li><a href="#language">Language</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#pandoc-conversion">PANDOC CONVERSION</a>
+<ul>
+<li><a href="#pandoc-version-of-markdown">Pandoc version of Markdown</a></li>
+<li><a href="#epub-conversion">ePub Conversion</a></li>
+<li><a href="#ms-word-docx-conversion">MS Word docx Conversion</a></li>
+<li><a href="#auto-section-numbering">Auto Section Numbering</a>
+<ul>
+<li><a href="#heading-depth">Heading Depth</a></li>
+<li><a href="#skip-numbering">Skip Numbering</a></li>
+<li><a href="#appendix-lettering">Appendix Lettering</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#testing">TESTING</a>
+<ul>
+<li><a href="#kindle-create-testing">Kindle Create Testing</a></li>
+<li><a href="#kindle-preview-testing">Kindle Preview Testing</a></li>
+</ul>
+</li>
+<li><a href="#end-matter">END Matter</a>
+<ul>
+<li><a href="#about-the-author">About the Author</a></li>
+<li><a href="#resources-and-links">Resources and Links</a>
+<ul>
+<li><a href="#markdown-1">Markdown</a></li>
+<li><a href="#vs-code">VS Code</a></li>
+</ul>
+</li>
+<li><a href="#references">References</a></li>
+<li><a href="#praise-for-the-author">Praise for the Author</a></li>
+<li><a href="#review-this-book-please">Review This book please</a></li>
+<li><a href="#books-by-this-author">Books by this Author</a></li>
+<li><a href="#books-in-this-series">Books in this Series</a></li>
+<li><a href="#acknowledgement">Acknowledgement</a></li>
+</ul>
+</li>
+<li><a href="#appendix-a---markdown-cheat-sheet">Appendix A - Markdown Cheat Sheet</a></li>
+</ul>
+<p>Table of Tables</p>
+<p>Table of Figures</p>
+<p>Table of Equations</p>
+<p>Table of Symbols</p>
+<h2 id="copyright" class="unnumbered">Copyright </h2>
+<p>My1st eTextbook Boilerplate in 2025</p>
+<p>Copyright © 2025 Harry Longworth. All rights reserved.</p>
+<p>In this case see refer to the Creative Commons license file in the git.</p>
+<p><strong>Kindle Create version:</strong></p>
+<p>Example of content suggested by Kindle Create for his section:</p>
+<blockquote>
+<p>Start:</p>
+</blockquote>
+<p>All rights reserved.</p>
+<p>The characters and events portrayed in this book are fictitious. Any similarity to real persons, living or dead, is coincidental and not intended by the author.</p>
+<p>No part of this book may be reproduced, or stored in a retrieval system, or transmitted in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without express written permission of the publisher.</p>
+<p>ISBN-13: TBA<br>
+ISBN-10: TBA</p>
+<p>Cover design by: Harry Longworth<br>
+Library of Congress Control Number: TBA<br>
+Printed in the United States of America</p>
+<blockquote>
+<p>END Kindle Create suggestion.</p>
+</blockquote>
+<p>You might also want to add other legal content here. For example:</p>
+<p><strong>Legal Disclaimer:</strong> All care taken, but no responsibility.  You use the information and advice in this document at your own risk!</p>
+<h2 id="feedback" class="unnumbered">Feedback </h2>
+<p>Please provide and feedback or issues encountered with this work via the contact form on the author's website:</p>
+<p><a href="https://harrylongworth.com">Harry Longworth</a></p>
+<h2 id="dedication" class="unnumbered">Dedication </h2>
+<p>To our family! Thank you for supporting us in the creation of this work.</p>
+<h2 id="foreword" class="unnumbered">Foreword </h2>
+<p>A foreword should be written by someone other than the Author.</p>
+<p>As this is a brand new project no such someone exists.  If you would like to volunteer to be that person drop me a line.</p>
+<h2 id="preface" class="unnumbered">Preface </h2>
+<p>Why you wrote this book. I wrote this because I have a wide range of technical content to publish and this is the logical place to start with go live for all that work.</p>
+<p>By sharing this simple outline and guide and then polishing it over time I, and thus you, don't start my tech how to guides and textbooks with an empty page!</p>
+<p>It helps me get my boilerplate checklist of content out of the road and provides a checklist of format.</p>
+<p>I hope it serves you well!</p>
+<p>Harry Longworth</p>
+<p>As I write this, thousands of authors around the world are creating content to share with others and make the world a better place.  The focus of this guide is technical content rather than fiction, but it can still apply to fiction if you choose.</p>
+<h3 id="boilerplate" class="unnumbered">Boilerplate </h3>
+<p>What is boilerplate? It's a technical writer term for the sort of content that every document should, or needs, to have in it.  It is the difference between a quick jotted how to guide and a polished professional document - that hopefully - you expect to get paid for.</p>
+<p>To quote Google Gemini:</p>
+<blockquote>
+<p>The term "boilerplate" generally refers to standardized, reusable text, language, or code that can be used in various documents or applications with little or no change</p>
+</blockquote>
+<p>If you come from a programming background, you can consider this my "abstract class" or interface definition. It doesn't instantiate the actual working classes, it provides a high level definition of the interface that I expect most of my textbooks to meet.</p>
+<p>This template is the starting point document I use for my eBook textbooks.</p>
+<p>I expect it to evolve over time. So stay tuned for version updates!</p>
+<h2 id="introduction" class="unnumbered">Introduction </h2>
+<p>Kindle Create suggests the use of an Introduction for non fiction books in the front matter as separate from the content.  Not sure why but lets give it a go.</p>
+<h3 id="who-and-why" class="unnumbered">Who and Why? </h3>
+<p>Start with your audience in mind, and the problem they have that would compel them to pay to read your book.</p>
+<p>For instance this guide is for technical writers, not fiction writers.  i.e. you are working on a textbook or how to guide, not a romance novel.</p>
+<h3 id="in-scope" class="unnumbered">In Scope </h3>
+<p>Be clear up front on What will your book cover.</p>
+<p>For example, this one will cover:</p>
+<ul>
+<li>Definitions.  What is an eTextbook.</li>
+<li>Standard structure of an eTextbook.</li>
+<li>Standard content to consider for every technical textbook and document.</li>
+<li>For Example:
+<ul>
+<li>Navigation.</li>
+<li>Front Matter.</li>
+<li>Body formatting.</li>
+<li>End Matter.</li>
+</ul>
+</li>
+<li>Content and structure derived from Kindle Create as a starting point.</li>
+<li>Basic tool use.</li>
+<li>Basic Markdown syntax.</li>
+<li>How to test!</li>
+</ul>
+<h3 id="out-of-scope" class="unnumbered">Out of Scope </h3>
+<p>What won't your book cover! Just as important.</p>
+<p>This document will not cover:</p>
+<ul>
+<li>The HTML format.</li>
+<li>the ePub format.</li>
+<li>LaTex format.</li>
+<li>PDF format.</li>
+<li>How to use MS Word.</li>
+<li>how to use Pandoc.</li>
+<li>how to use Kindle Create or Preview.</li>
+<li>Installation of tools.</li>
+<li>Kindle publishing.</li>
+</ul>
+<h3 id="prerequisites" class="unnumbered">Prerequisites </h3>
+<p>What do you expect your reader to already know.</p>
+<p>I expect readers of this guide to have a technical background.</p>
+<h3 id="outline" class="unnumbered">Outline </h3>
+<p>Provide a quick outline of your book content.  This content should align with your TOC.</p>
+<h1 id="start-here">START HERE </h1>
+<p>Chapter Quote Example: "Start with the End in Mind"</p>
+<p>What should every eTextbook contain?</p>
+<p>To answer this question I reviewed a whole bunch of physical and "virtual" textbooks from a range of publishers.</p>
+<p>For example, my go to guides for quick start have been the <em>Dummies</em> series <a href="https://www.dummies.com/">https://www.dummies.com/</a> by Wiley and the <em>Complete Idiot</em> guides <a href="https://en.wikipedia.org/wiki/Complete_Idiot%27s_Guides">Wikipedia reference</a>.</p>
+<p>I also referenced a number of open source documents on GitHub.  The Godot game engine project docs for example.</p>
+<p>You can look at their project  documentation as an example online at:</p>
+<p><a href="https://docs.godotengine.org/en/stable/">https://docs.godotengine.org/en/stable/</a></p>
+<h2 id="legacy-of-paper">Legacy of Paper </h2>
+<p>Historically textbooks were in paper.  And that format had different requirements which bled into the first digital version.  But the requirements for an online, digital, text book are different to what we had back in the old days.</p>
+<p>Now we expect to be able to read our technical content on small screens and ALSO big screens.  We switch between devices depending on the time of the day and our current needs.</p>
+<p>That usage provides a challenge.  That challenge is mostly met by the use the ePub format.</p>
+<p>So when we consider the options for the configuration, structure and formatting of an eTextbook we need to consider the constraints of the epub format.</p>
+<p>Then from a commercial perspective we need to factor in Amazon Kindle eBook use and the restrictions grayscale eInk devices place on our format.</p>
+<p>For example if you want to maximize compatibility then you should drop the use of colored text.  Seems obvious but lots of historical content that was migrated use it.</p>
+<p>One of the other key expectations of screen reading content is shorter, sharper content.  We avoid large blocks of text!</p>
+<p>In contrast if we were heading towards a physical print document, then maybe you would consider PDF format as the goal, and content formatting and editing with a platform like LaTeX.</p>
+<p>So what are the format capabilities we expect for modern electronic reflow textbooks?</p>
+<p>Lets start by exploring the use of Markdown.</p>
+<h1 id="markdown">MARKDOWN </h1>
+<p>ePub is basically HTML and CSS.  But no one wants to think about writing HTML and CSS whilst trying to brain dump.</p>
+<p>That often leads us to using editors like MS Word.  But then the problem is we start to have too many options and get distracted into adding color to fonts for example.</p>
+<p>If you are a technical writer in the software development space you're then you will be using git.  And then because of that possibly GitHub.</p>
+<p>In that case the very first file you are expected to create is a <a href="http://Readme.md">Readme.md</a> for your project.</p>
+<p>So in that space Markdown is the the go to text formatting convention.</p>
+<p>And you can also use it to create content for website generation and more.</p>
+<p>So to that end I focus on the use of Markdown for text content formatting and then in turn the challenges of conversion of that with Pandoc.</p>
+<p>You can grab the Markdown version of this document / template from the GitHub for this project.  See resources section at the end for the link.</p>
+<h2 id="markdown-syntax">MARKDOWN SYNTAX </h2>
+<p>Whilst the Markdown is not the point of this book, I include the content below as an example of each of the various capabilities we expect to be able to show in an ePub eTextbook.</p>
+<p>Standard Markdown formatting syntax as discussed below is based on the creator's website as listed in the resources section.</p>
+<p>NOW - because we are going to be using Pandoc for conversion we need to also consider how pandoc handles Markdown which is discussed here:</p>
+<p><a href="https://pandoc.org/MANUAL.html#pandocs-markdown">https://pandoc.org/MANUAL.html#pandocs-markdown</a></p>
+<p>Jump to the <a href="#appendix-a---markdown-cheat-sheet">Markdown Cheat Sheet</a> if you just want a quick reminder of what symbol  to use for what when using Markdown formatting.</p>
+<h2 id="headings--and-">Headings <code>#</code> and <code>##</code> </h2>
+<p>Atx-style headers use 1-6 hash characters at the start of the line, corresponding to header levels 1-6. For example:</p>
+<p><code>#</code> for Heading 1</p>
+<p><code>##</code> for heading 2</p>
+<p><em>Note:</em> I used backticks to escape the hash sign above!</p>
+<p>Increase the number of # to reduce heading level (up to 6)</p>
+<p>Optionally, you may “close” atx-style headers. This is purely cosmetic — you can use this if you think it looks better. The closing hashes don’t even need to match the number of hashes used to open the header. (The number of opening hashes determines the header level.) :</p>
+<p>Other type of heading format:</p>
+<p>"Setext-style headers are “underlined” using equal signs (for first-level headers) and dashes (for second-level headers). "</p>
+<ul>
+<li>Any number of underlining = signs or - signs will work.</li>
+</ul>
+<blockquote>
+<p>Heading 1<br>
+<code>========</code></p>
+</blockquote>
+<p>AND then:</p>
+<blockquote>
+<p>Heading 2<br>
+<code>--------</code></p>
+</blockquote>
+<p>BUT! How do we then hide these headings from the Table of contents or from auto numbering?</p>
+<p>I've removed the demo of the format from this document because of that issue.</p>
+<p><strong>What about heading 3 with this approach?</strong></p>
+<ul>
+<li>You don't?</li>
+</ul>
+<p>How many characters do we use so it knows the difference between a HR and a heading?</p>
+<p><strong>NOTE: I use the # heading approach because it makes it easier to re level headings and opens up level 3 headings. That and the auto numbering challenge.</strong></p>
+<h2 id="escape-symbol-">Escape Symbol <code>\</code> </h2>
+<p>Symbols can be escaped with <code>\</code></p>
+<p>For example this guide depends on the ability to escape the various markdown symbols so that they can be presented in the document.</p>
+<p>for example escape backtick: ` with <code> \</code> `</p>
+<p>and escape tilda with <code>\~</code></p>
+<p>Look through out this document in the markdown version for further examples.</p>
+<h2 id="bullets-with----and-_">Bullets with <code>#</code>, <code>-</code> and <code>_</code> </h2>
+<p>can use standard * as list</p>
+<ul>
+<li>foo</li>
+<li>bar</li>
+</ul>
+<p>and can nest with tabs or multiple spaces (Four?)</p>
+<p>can also use <code>-</code> for bullets and lists</p>
+<ul>
+<li>bullet point</li>
+<li>and another</li>
+</ul>
+<h2 id="multi-level-list">Multi level list </h2>
+<p>Use tab or spaces to indent the additional levels of list.</p>
+<ul>
+<li>Item one
+<ul>
+<li>indented with tab.</li>
+<li>another with tab.</li>
+</ul>
+</li>
+<li>Shift tab to go back up a level
+<ul>
+<li>four spaces indented version.</li>
+</ul>
+</li>
+</ul>
+<h2 id="numbered-lists-1">Numbered Lists <code>1.</code> </h2>
+<p>Numbered lists can just use repeated 1. or any number followed by a full stop repeated</p>
+<p>for example:</p>
+<blockquote>
+<p><code>1. foo</code><br>
+<code>1. bar</code></p>
+</blockquote>
+<p>results in:</p>
+<ol>
+<li>foo</li>
+<li>bar</li>
+</ol>
+<p>which makes auto/renumbering easier!</p>
+<p><strong>NOTE:</strong> it's the full stop after the number that activates the numbered list.  So use a backslash to escape the full stop e.g. <code>\.</code> to prevent numbered list</p>
+<h2 id="bold--">Bold  <code>**</code> </h2>
+<p>'**' for bold at start and end of text to be formatted bold.</p>
+<p><code>**This should be bold**</code></p>
+<p>Looks like this:</p>
+<p><strong>This should be bold</strong></p>
+<ul>
+<li>You do need to to start the text straight after the double stars - i.e. no space.</li>
+</ul>
+<h2 id="italics--_">Italics  <code>_</code> </h2>
+<p>Use <code>_</code> (underscore) for italic at the start and end</p>
+<p>for example: (see MD version)</p>
+<p><code>_this is italic_</code></p>
+<p>looks like this:</p>
+<p><em>this is italic</em></p>
+<p><strong>Can also use single <code>*</code> at start and end to format as italics.</strong></p>
+<h2 id="block-quote--">Block Quote  <code>&gt;</code> </h2>
+<p>Use <code>&gt;</code> per line to have a block quote.</p>
+<p>Block quote example:</p>
+<p><code>&gt; Used for inset / quote style formatting</code><br>
+<code>&gt; and to have your text indented.</code><br>
+<code>&gt; I use double space after each line to force line breaks  </code></p>
+<p>looks like this:</p>
+<blockquote>
+<p>Used for inset / quote style formatting<br>
+and to have your text indented.<br>
+I use double space after each line to force line breaks</p>
+</blockquote>
+<p>Markdown allows you to be lazy and only put the &gt; before the first line of a hard-wrapped paragraph:</p>
+<h2 id="code--">CODE  ` </h2>
+<p>use back tick ` to mark out code so can display HTML and symbols etc.</p>
+<p><strong>NOTE:</strong> This is not ' or " (i.e. not the ditto, or floating apostrophe keys) It's the shift ~ key on my keyboard.</p>
+<p>or if want shell style code formatting:</p>
+<p>` ```sh</p>
+<p>for code excerpts<br>
+like this</p>
+<p>if else where for while</p>
+<p>` ```</p>
+<p>Looks like this:</p>
+<pre data-role="codeBlock" data-info="sh" class="language-bash sh"><code><span class="token keyword keyword-for">for</span> code excerpts
+like this 
+
+<span class="token keyword keyword-if">if</span> <span class="token keyword keyword-else">else</span> where <span class="token keyword keyword-for">for</span> <span class="token keyword keyword-while">while</span>
+
+
+</code></pre><p><strong>WARNING!</strong> Kindle create doesn't import block quotes in this format.</p>
+<p>Good news: Pandoc does recognize the convention though so should get through to an ePub format.</p>
+<h2 id="other-code-formats">Other Code formats </h2>
+<blockquote>
+<p>```json</p>
+</blockquote>
+<p>if you want the fenced code to be read as JSON format</p>
+<h2 id="alertcode">Alert/code </h2>
+<p>` Back tick is the key to the left of 1 on my keyboard.</p>
+<p>` text inside single back tick is annotated`</p>
+<p>and looks like this:</p>
+<p><code>text inside single tick is annotated</code></p>
+<p>I use backtick to escape markdown formatting throughout this document.</p>
+<p>I use backslash <code>\</code> to escape the backticks |:D</p>
+<p>Not sure how effective that is accross platforms?</p>
+<h2 id="horizontal-line--">Horizontal line <code>---</code> </h2>
+<p>How do I get the typical HTML horizontal rule? <code>&lt;HR&gt;</code></p>
+<p>Use<br>
+<code>---</code><br>
+or<br>
+<code>***</code><br>
+or<br>
+<code>- - - </code><br>
+or <code>___</code> (underscore)</p>
+<p>to get this:</p>
+<hr>
+<p>which is equivalent to an HTML <code>&lt;HR&gt;</code></p>
+<h2 id="manual-line-break">Manual line break </h2>
+<ul>
+<li>end a line with two or more spaces</li>
+<li>handy for code examples etc.</li>
+</ul>
+<h2 id="indent">Indent </h2>
+<ul>
+<li>use four spaces</li>
+<li>or tab?</li>
+</ul>
+<h2 id="tables-xxx">Tables <code>|x|x|x|</code> </h2>
+<blockquote>
+<p><code>| Column 1  |  Col 2 |</code><br>
+<code>| ------ | ------ |</code><br>
+<code>| Row 1 | column 2 |</code><br>
+<code>| Row 2 | column 2 |</code> `</p>
+</blockquote>
+<p>looks like this:</p>
+<table>
+<thead>
+<tr>
+<th>Column 1</th>
+<th>Col 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Row 1</td>
+<td>column 2</td>
+</tr>
+<tr>
+<td>Row 2</td>
+<td>column 2</td>
+</tr>
+</tbody>
+</table>
+<p>There are way more variations on this subject to be explored!</p>
+<p>For example can I get background colour alternation?</p>
+<p>Can I force background colours and borders?</p>
+<h2 id="table-text-alignment">Table Text Alignment </h2>
+<blockquote>
+<p><code>| Left | Middle | Right |</code><br>
+<code>| :---|:----:|---:|</code><br>
+<code>| Left|Centered|Right|</code><br>
+<code>| Aligned Left   | Aligned Middle| Aligned Right |</code></p>
+</blockquote>
+<p>looks like:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Left</th>
+<th style="text-align:center">Middle</th>
+<th style="text-align:right">Right</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Left</td>
+<td style="text-align:center">Centered</td>
+<td style="text-align:right">Right</td>
+</tr>
+<tr>
+<td style="text-align:left">Aligned Left</td>
+<td style="text-align:center">Aligned Middle</td>
+<td style="text-align:right">Aligned Right</td>
+</tr>
+</tbody>
+</table>
+<p><em>Question:</em> Altering the number of <code>-</code>  in the second formatting row results in what outcome? Does it increase column width?</p>
+<hr>
+<h2 id="table-caption">Table Caption </h2>
+<p>Pandoc supports a table caption like this:</p>
+<blockquote>
+<p><code>Table:  Demonstration of simple table syntax</code></p>
+</blockquote>
+<p>Example:</p>
+<blockquote>
+<p><code>Right     Left     Center     Default</code><br>
+<code>-------     ------ ----------   -------</code><br>
+<code>12     12        12            12</code><br>
+<code>123     123       123          123</code><br>
+<code>1     1          1             1</code><br>
+Table:  Demonstration of simple table syntax</p>
+</blockquote>
+<p>Right     Left     Center     Default</p>
+<hr>
+<p>12     12        12            12<br>
+123     123       123          123<br>
+1     1          1             1<br>
+Table:  Demonstration of simple table syntax</p>
+<h2 id="links---or-">Links = <code>&lt;&gt;</code> or <code>[]()</code> </h2>
+<p>Some platforms will show a URL as a link just based on the format of the url for example:</p>
+<p><a href="https://github.com">https://github.com</a></p>
+<p>which can be turned off with code backticks like this:</p>
+<blockquote>
+<p>`<a href="https://github.com">https://github.com</a>`</p>
+</blockquote>
+<p>looks like this:</p>
+<p><code>https://github.com</code></p>
+<p>Can always just enclose in <code>&lt; &gt;</code> too.</p>
+<blockquote>
+<p><code>&lt;https://github.com&gt;</code></p>
+</blockquote>
+<p>looks like:</p>
+<p><a href="https://github.com">https://github.com</a></p>
+<p><strong>Markdown Link format:</strong></p>
+<p>Otherwise the format for a link is:</p>
+<blockquote>
+<p><code>[text label](URL)</code></p>
+</blockquote>
+<p>for example:</p>
+<p><code>[John's Website](https://daringfireball.net/projects/markdown/)</code></p>
+<p>looks like this:</p>
+<p><a href="https://daringfireball.net/projects/markdown/">John's Website</a></p>
+<p><strong>NOTE:</strong>  important that there are no space between square brackets and link in brackets!</p>
+<p>Can have image links too.</p>
+<p>Can add a URL hover title:</p>
+<blockquote>
+<p><code>[text label](URL "title")</code></p>
+</blockquote>
+<p><a href="URL" title="title">text label</a></p>
+<p><em>hover over the top to see the title text.</em></p>
+<h2 id="reference-style-links">Reference Style Links </h2>
+<p>Reference style label:</p>
+<p>An <code>[example][id]</code>. Then, anywhere<br>
+else in the doc, define the link:</p>
+<p><code>[id]: http://example.com/  "Title"</code></p>
+<p><em>Question:</em> How would I refer to content in a github sub folder for example? eg. relative rather than absolute URLs?</p>
+<h2 id="images-">Images <code>![]()</code> </h2>
+<p><code>![alt text](/path/img.jpg "Title")</code></p>
+<p>or reference style</p>
+<p><code>![alt text][id]</code></p>
+<p>then later:<br>
+<code>[id]: /url/to/img.jpg "Title"</code></p>
+<hr>
+<h2 id="extended-markdown">EXTENDED MARKDOWN </h2>
+<p>Source for most of this is the markdown guide Hacks page.</p>
+<p>Extended syntax might not be supported on all platforms.</p>
+<h3 id="underlining">Underlining </h3>
+<p>Not included because in HTML underlining normally was a way of indicating a URL / link.</p>
+<h3 id="text-alignment-center">Text Alignment <code>&lt;center&gt;</code> </h3>
+<p>Can I center text for example?</p>
+<p><strong>No.</strong></p>
+<p>Use HTML instead.<br>
+e.g. <code>&lt;center&gt;</code> tag which is depreciated.. so use css etc..</p>
+<center>Does this work?</center>
+<h3 id="color">Color </h3>
+<p>Use HTML.</p>
+<h3 id="strikethrough-">Strikethrough <code>~~</code> </h3>
+<p>Use <code>~~</code></p>
+<p>An extended feature though so maybe not supported everywhere?</p>
+<p>An example of strikethrough:</p>
+<blockquote>
+<p>~~Strike me!~~</p>
+</blockquote>
+<p>looks like:</p>
+<blockquote>
+<p><s>Strike me!</s></p>
+</blockquote>
+<h3 id="to-do-list-checkboxes---x">To Do List Checkboxes <code>- [x]</code> </h3>
+<p>to create a checkbox list on platforms that support the extended syntax:</p>
+<blockquote>
+<p><code>- [x] Task that is checked</code><br>
+<code>- [ ] Item that is not checked</code><br>
+<code>- [ ] Item 3</code></p>
+</blockquote>
+<p>looks like this:</p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked=""> Task that is checked</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Item that is not checked</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Item 3</li>
+</ul>
+<h3 id="highlighting-mark">Highlighting <code>&lt;mark&gt;</code> </h3>
+<p>Either use the double equals like this <code>==</code></p>
+<p>or the HTML <code>&lt;mark&gt;</code> tag</p>
+<p><code>==Highlighted text==</code></p>
+<p>looks like</p>
+<p><mark>Highlighted text</mark></p>
+<p><em>Note:</em> didn't work in VS Code.</p>
+<p><strong>HTML Approach:</strong></p>
+<p><code>&lt;mark&gt;Marked Text&lt;/mark&gt;</code></p>
+<p>looks like</p>
+<p><mark>Marked Text</mark></p>
+<p><em>Note:</em> Worked in VS Code.</p>
+<h3 id="subscript">Subscript </h3>
+<p>use the <code>~</code> just a single one instead of strike through.</p>
+<blockquote>
+<p><code>H~2~O</code></p>
+</blockquote>
+<p>looks like this</p>
+<p>H<sub>2</sub>O</p>
+<p><em>Note:</em> Didn't work on VS Code</p>
+<h3 id="footnotes-1">Footnotes <code>[^1]</code> </h3>
+<p>Here's a sentence with a footnote. <code>[^1]</code></p>
+<p><code>[^1]</code>: This is the footnote.</p>
+<p>Looks like:</p>
+<p>Here's a sentence with a footnote. <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<p><strong>Doesn't work in VS Code but does in Github.</strong></p>
+<p>What about more than one with the same number (i.e. <code>[^1]</code>) as we wouldn't want to have to individually number each footnote.</p>
+<p>Bad news there - you need to annotate with numbers unique to each one.</p>
+<p>Another footnote - footnote 2 <sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></p>
+<h3 id="table-of-contents">Table of Contents </h3>
+<h4 id="vs-code-extension-approach">VS Code Extension approach </h4>
+<p>Use the VS Code All in one TOC creation from the command pallet (ctrl shift P)</p>
+<p>Details on the command pallet from Microsoft:</p>
+<p><a href="https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette">VS Code Command Pallet</a></p>
+<p>and use this to ommit a heading from the TOC:</p>
+<blockquote>
+<p><code>&lt;!-- omit from toc --&gt;</code></p>
+</blockquote>
+<p>Which is what I did for the headings in the Headings section</p>
+<h4 id="another-toc-way">Another TOC Way </h4>
+<p>Problem with this approach is end up with the annotation in the heading if not supported?</p>
+<p>Depends on extended syntax?</p>
+<p>For example heading IDs:</p>
+<p><a href="https://www.markdownguide.org/extended-syntax/#heading-ids">Heading IDs</a></p>
+<p>where you add the equivalent to the standard HTML anchor tag to your headings with curly braces.</p>
+<p><code>### My Great Heading {#custom-id}</code></p>
+<p>and then in the table:</p>
+<p><code>[Heading IDs](#heading-ids)</code></p>
+<h3 id="comments--">Comments <code>[//]: #</code> </h3>
+<p>Comments that aren't to be shown in the final result can be marked as this:</p>
+<blockquote>
+<p><code>[comment]: #</code></p>
+</blockquote>
+<p>Can't be seen (look at the markdown version to see comment below)</p>
+<p>If that doesn't work, alternatively this approach:</p>
+<p><code>[//]: # (Comment text in here)</code></p>
+<p>looks like:</p>
+<h2 id="pandoc-markdown">Pandoc Markdown </h2>
+<p>see the Pandoc reference for the details:</p>
+<p><a href="https://pandoc.org/MANUAL.html#pandocs-markdown">https://pandoc.org/MANUAL.html#pandocs-markdown</a></p>
+<p>For example pandoc provides for:</p>
+<ul>
+<li>Small Caps font style.</li>
+<li>More Table options.</li>
+<li>Math extensions.</li>
+</ul>
+<p>Markdown allows raw HTML.  Some editors don't but since we are using pandoc for conversion it is more important that pandoc provides support than if the editor does.</p>
+<h2 id="conventions">Conventions </h2>
+<p>Here are some example conventions for eTextbooks and the use of Markdown.</p>
+<h3 id="formatting">Formatting </h3>
+<ul>
+<li>I format chapter headings with all upper case so that I can see them during Kindle Create conversion testing.</li>
+<li>Avoid underlining.  That's for hyper links.</li>
+<li>Avoid comments in brackets - it breaks the flow and because we are focusing on Markdown brackets are used to indicate links and images.</li>
+<li>avoid colored text.  It won't show very well on grayscale eInk devices.</li>
+<li>Grayscale diagrams.  Same applies to pictures, figures and diagrams.  Plan for black and white.</li>
+</ul>
+<h3 id="language">Language </h3>
+<p>If you are focused on Kindle publishing then you are probably focused on the US market. That means you should be using the English US dictionary as much as that might pain you.</p>
+<h1 id="pandoc-conversion">PANDOC CONVERSION </h1>
+<p>Pandoc is the tool I use to convert Markdown into eBooks in the form of an ePub that I can then upload to Kindle.</p>
+<p>There are multiple reasons to bypass Kindle Create and go straight to ePub format which I'll discuss elsewhere.</p>
+<h2 id="pandoc-version-of-markdown">Pandoc version of Markdown </h2>
+<p>Pandoc uses a slightly modified version of Markdown as explained here:</p>
+<p><a href="https://pandoc.org/MANUAL.html#pandocs-markdown">https://pandoc.org/MANUAL.html#pandocs-markdown</a></p>
+<h2 id="epub-conversion">ePub Conversion </h2>
+<p>With Pandoc installed you can generate an ePub from VSCode with the Markdown Preview Enhanced export option menu if have pandoc and Calibre installed.</p>
+<p>You will need a cover image to test:</p>
+<ul>
+<li>Recommended dimensions: 1600 x 2400 pixels (1.5:1 ratio)</li>
+<li>Format: JPEG or PNG (but JPEG)</li>
+<li>Maximum file size: Under 4MB</li>
+</ul>
+<p>Place the cover image in the same location as your markdown file. Call it cover.png for example. Make sure it is big enough of Kindle Preview will fail.</p>
+<p>Optional step: configure an epub.css file with a style sheet for custom format configuration.</p>
+<p>Setup a metadata.yaml file:<br>
+<code>--- title: My Fantastic Book author: Jane Doe date: 2025-11-09 identifier: doi:10.123456789/mybook lang: en-US ---</code></p>
+<p>Then use Pandoc to convert from markdown  to ePub:</p>
+<blockquote>
+<p><code>pandoc my1st-etextbook-boilerplate-guide.md -o dist/output.epub --standalone --metadata-file=metadata.yaml --epub-cover-image=cover.png</code></p>
+</blockquote>
+<p>Warning! This document currently fails the Kindle Preview import.</p>
+<p>Testing in progress for compatibility corrections.</p>
+<p>That testing is part of the purpose for the creation of this document.</p>
+<h2 id="ms-word-docx-conversion">MS Word docx Conversion </h2>
+<p>Basic Markdown to docx conversion command in Pandocs:</p>
+<blockquote>
+<p><code>pandoc input.md -o output.docx</code></p>
+</blockquote>
+<p>which for this document and github repo is:</p>
+<blockquote>
+<p><code>pandoc my1st-etextbook-boilerplate-guide.md -o dist/output.docx</code></p>
+</blockquote>
+<h2 id="auto-section-numbering">Auto Section Numbering </h2>
+<p>One of the pain points encountered during testing of this document was auto Chapter numbering.</p>
+<p>There is a facility in pandoc to do auto section numbering with the addition of this text to the command:</p>
+<blockquote>
+<p><code>--number-sections</code></p>
+</blockquote>
+<p>which for this document results in the word conversion like this:</p>
+<blockquote>
+<p><code>pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-numbered.docx --number-sections</code></p>
+</blockquote>
+<p>This gives us a great tiered numbering format for headings so we can clearly illustrate heading depth to the reader.</p>
+<p>I would recommend doing this.</p>
+<p>Leads to the question of how we skip headings for the front matter though and to what depth of heading?</p>
+<p>As a result of the adoption of this approach the word Chapter was removed from headings.</p>
+<h3 id="heading-depth">Heading Depth </h3>
+<p>You can control the depth of heading with the addition of this command to the prompt:</p>
+<blockquote>
+<p><code>--toc-depth=2</code></p>
+</blockquote>
+<p>In this case explore a depth of four with an update to our prompt:</p>
+<blockquote>
+<p><code>pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-numbered-4.docx --number-sections --toc-depth=4</code></p>
+</blockquote>
+<h3 id="skip-numbering">Skip Numbering </h3>
+<p>To prevent numbering of the Front and End Matter add the tag:</p>
+<blockquote>
+<p><code>{.unnumbered}</code></p>
+</blockquote>
+<p>or perhaps</p>
+<blockquote>
+<p><code>{-}</code></p>
+</blockquote>
+<p>to the headings as done in this document for front and back matter.</p>
+<p>Pandoc recommend the <code>{-}</code> version of the tag.</p>
+<h3 id="appendix-lettering">Appendix Lettering </h3>
+<p>For an appendix where you want letters instead of numbers use the tag:</p>
+<blockquote>
+<p><code>{Appendices}</code></p>
+</blockquote>
+<p>Do I apply to just the top heading in that section, or each heading in that section?</p>
+<h1 id="testing">TESTING </h1>
+<p>How do we test this works?</p>
+<ul>
+<li>convert to a MS Word docx so you can feed into Kindle Create to get an idea of where the formatting issues are that require the use of ePub.</li>
+<li>test in Kindle preview.  You'll have to bug hunt your format if you start this testing with a complex format.  Best to start testing here early!  For example images and CSS issues.</li>
+<li>Convert to ePub with Pandoc</li>
+<li>Send to kindle as an ePub.</li>
+<li>Calibre for ePub viewing and editing is another option.</li>
+<li>Check Github it to see how Github converts.</li>
+<li>Read it on a range of devices with small and large screen dimensions.</li>
+<li>read on an eInk kindle that is not color.</li>
+<li>Increase and reduce font size</li>
+<li>Test Dark and Light mode on tablets and phones.</li>
+</ul>
+<h2 id="kindle-create-testing">Kindle Create Testing </h2>
+<p>The kindle create testing process used for this document is a two step process.</p>
+<p>Pandoc is used to create a docx format version which is then imported into Kindle Create.</p>
+<p>No modifications are made in Word to that document. Although they could be, that would not be the point of using Markdown as our master format.</p>
+<p>Kindle Create conversion has limitations as discussed below:</p>
+<ul>
+<li>Conversion of document structure below Heading 1 is introduced as all heading 1 level unless you unselect the lower level headings.</li>
+<li>The table of contents creation option in Kindle Create doesn't support structure below Heading 1 style.</li>
+<li>Kindle strips monospace formatting out of word documents.</li>
+<li>Block quote format doesn't convert.</li>
+</ul>
+<h2 id="kindle-preview-testing">Kindle Preview Testing </h2>
+<p>This document - v0.1 - fails test.  Kindle Preview doesn't import successfully as you can see from the conversion log.</p>
+<p>Testing in progress.</p>
+<h1 id="end-matter" -="true">END Matter </h1>
+<p>This is the sort of content that Kindle Create with the addition of Resources and References headings and Appendix.</p>
+<h2 id="about-the-author" -="true">About the Author </h2>
+<p>Harry Longworth is the author of this work. My author website can be found here:</p>
+<p><a href="https://harrylongworth.com">https://harrylongworth.com</a></p>
+<p>Please provide any feedback or raise issues on this work via my contact page.</p>
+<p>Check my LinkedIn Profile for more information and my credentials:</p>
+<p><a href="https://www.linkedin.com/in/harry-longworth-amhazing/">https://www.linkedin.com/in/harry-longworth-amhazing/</a></p>
+<p><code>&lt;Author Image&gt;</code> required by Kindle Create so here's mine as an example:</p>
+<p><a href="https://harrylongworth.com" title="Harry Longworth"><img src="media/harry-longworth.jpg" alt="Harry Longworth"></a></p>
+<h2 id="resources-and-links" -="true">Resources and Links </h2>
+<h3 id="markdown-1" -="true">Markdown </h3>
+<p>Markdown creator's website:<br>
+<a href="https://daringfireball.net/projects/markdown/">John Gruber's Website</a></p>
+<p>First Google search return result on Markdown guide:<br>
+<a href="https://www.markdownguide.org/getting-started/">markdownguide.org</a></p>
+<p>Pandoc version of Markdown:<br>
+<a href="https://pandoc.org/MANUAL.html#pandocs-markdown">Pandoc on Markdown</a></p>
+<h3 id="vs-code" -="true">VS Code </h3>
+<p>VS Code Enhanced Markdown Preview Extension:<br>
+<a href="https://shd101wyy.github.io/markdown-preview-enhanced">Enhanced Markdown Preview on Github</a></p>
+<h2 id="references" -="true">References </h2>
+<p>John Gruber's Syntax guide:<br>
+<a href="https://daringfireball.net/projects/markdown/syntax">daringfireball.net</a></p>
+<h2 id="praise-for-the-author" -="true">Praise for the Author </h2>
+<p>Insert your positive reviews here</p>
+<h2 id="review-this-book-please" -="true">Review This book please </h2>
+<p>Please review this book positively and widely if you liked it!</p>
+<p>That's one of the best ways you can thank me for the hard work that went into putting this guide together.</p>
+<p>Thank you for reading this far!</p>
+<h2 id="books-by-this-author" -="true">Books by this Author </h2>
+<p>See the <a href="http://My1st.org">My1st.org</a> website for current books in this series.</p>
+<h2 id="books-in-this-series" -="true">Books in this Series </h2>
+<p>See the <a href="http://My1st.org">My1st.org</a> website for current books in this series.</p>
+<h2 id="acknowledgement" -="true">Acknowledgement </h2>
+<p>Without the work of open source creators around the world this work would not have been possible! Thank you.</p>
+<h1 id="appendix-a---markdown-cheat-sheet" -="true">Appendix A - Markdown Cheat Sheet </h1>
+<p>Markdown Cheat sheet provided as an example of an Appendix:</p>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Result</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td># or ##</td>
+<td>Heading</td>
+<td><a href="#headings--and-">Headings</a></td>
+</tr>
+<tr>
+<td>\</td>
+<td>Escape Symbols</td>
+<td><a href="#escape-symbol-">Escape</a></td>
+</tr>
+<tr>
+<td>* , - , +</td>
+<td>Bullet Lists</td>
+<td><a href="#bullets-with----and-_">Bullets</a></td>
+</tr>
+<tr>
+<td>Tab or 4 spaces</td>
+<td>Multi level List</td>
+<td><a href="#multi-level-list">Multi level list</a></td>
+</tr>
+<tr>
+<td>1.</td>
+<td>Numbered List</td>
+<td><a href="#numbered-lists-1">Numbered Lists</a></td>
+</tr>
+<tr>
+<td>**</td>
+<td>Bold</td>
+<td><a href="#bold--">Bold</a></td>
+</tr>
+<tr>
+<td>_  Underscore</td>
+<td>Italics</td>
+<td><a href="#italics--_">Italics</a></td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>Block Quote</td>
+<td><a href="#block-quote--">Block Quote/Indent</a></td>
+</tr>
+<tr>
+<td>` Backtick</td>
+<td>Code</td>
+<td><a href="#code--">CODE</a></td>
+</tr>
+<tr>
+<td><code>--- , * * * , ___</code></td>
+<td>HR</td>
+<td><a href="#horizontal-line----">Horizontal line - HR</a></td>
+</tr>
+<tr>
+<td>space x 2</td>
+<td>Manual line break</td>
+<td><a href="#manual-line-break">Manual line break</a></td>
+</tr>
+<tr>
+<td>tab</td>
+<td>indent</td>
+<td><a href="#indent">Indent</a></td>
+</tr>
+<tr>
+<td><code>[text](url)</code></td>
+<td>Link</td>
+<td><a href="#links---or-">Links</a></td>
+</tr>
+<tr>
+<td><code>! [text](url)</code></td>
+<td>Image</td>
+<td><a href="#images-">Images</a></td>
+</tr>
+<tr>
+<td><code>&lt;center&gt;</code></td>
+<td>center</td>
+<td><a href="#text-alignment-center">Text Alignment</a></td>
+</tr>
+<tr>
+<td>~~</td>
+<td>Strikethrough</td>
+<td><a href="#strikethrough-">Strikethrough</a></td>
+</tr>
+<tr>
+<td><code>- [x]</code></td>
+<td>Checkbox</td>
+<td><a href="#to-do-list-checkboxes---x">To Do List Checkboxes</a></td>
+</tr>
+<tr>
+<td><code>&lt;mark&gt;</code></td>
+<td>Highlight</td>
+<td><a href="#highlighting-mark">Highlighting</a></td>
+</tr>
+<tr>
+<td><code>[^1]</code></td>
+<td>Footnote</td>
+<td><a href="#footnotes-1">Footnotes</a></td>
+</tr>
+<tr>
+<td><code>[]: #</code></td>
+<td>Hidden comment</td>
+<td><a href="#comments--">Comments <code>[]: #</code></a></td>
+</tr>
+</tbody>
+</table>
+<p><a href="http://Markdownguide.org">Markdownguide.org</a> has a good cheat sheet too:</p>
+<p><a href="https://www.markdownguide.org/cheat-sheet/">https://www.markdownguide.org/cheat-sheet/</a></p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>This is the footnote. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>This is the second footnote. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+</div>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

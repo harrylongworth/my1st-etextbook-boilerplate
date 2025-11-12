@@ -18,7 +18,7 @@ Front matter content as suggested by Kindle Create.
 
 Ebook Textbook Template, Boilerplate and Example Document Structuring using Markdown, VSCode, Pandoc and Github for Kindle Self Publishing
 
-v0.1.2 Edition (Alpha Testing)
+v0.1.3 Edition (Alpha Testing)
 
 Status: DRAFT
 

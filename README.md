@@ -29,7 +29,13 @@ Project Backlog:
 - [ ] Pdf export test.
 - [ ] LaTeX esport test.
 
+Inprogress:
+
+v0.1.3
+
 DONE!
+
+**NOTE:** I store each completed version as a branch.
 
 v0.1.2
 

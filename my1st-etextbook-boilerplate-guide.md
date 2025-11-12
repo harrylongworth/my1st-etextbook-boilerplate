@@ -18,7 +18,7 @@ Front matter included below as suggested by Kindle Create for template purposes.
 
 **My1st eTextbook Boilerplate in 2025:**
 
-Ebook Textbook Template, Boilerplate and Example Document Structuring using Pandoc and Github for Kindle Self Publishing
+Ebook Textbook Template, Boilerplate and Example Document Structuring using Markdown, Pandoc and Github for Kindle Self Publishing
 
 v0.1.3 Edition (Alpha Testing)
 
@@ -107,7 +107,7 @@ For instance this guide is for technical writers, not fiction writers.  i.e. you
 
 ## In Scope {.unnumbered}
 
-Be clear up front on What will your book cover.
+Be clear up front on what your book will cover.
 
 For example, this one will cover:
 
@@ -119,8 +119,8 @@ For example, this one will cover:
   - Front Matter.
   - Body formatting.
   - End Matter.
-- Content and structure derived from Kindle Create as a starting point.
-- How to use Pandoc for conversion.
+- Derive content and structure from the Kindle Create application.
+- How to use Pandoc for conversion of a Markdown formatted document.
 - How to test the results.
 
 In short the aim is to create a github repo that can be cloned as the starting point for the creation of each textbook and guide in the series.
@@ -132,10 +132,11 @@ What won't your book cover! Just as important.
 This document will not cover:
 
 - Installation of tools.
+- The Markdown format.
 - The HTML format.
-- the ePub format.
+- The ePub format.
 - LaTex format.
-- PDF format.
+- The PDF format.
 - How to use MS Word.
 - How to use Kindle Create or Preview.
 - Kindle publishing.
@@ -144,11 +145,17 @@ This document will not cover:
 
 What do you expect your reader to already know.  
 
-I expect readers of this guide to have a technical background.
+I expect readers of this guide to have a technical background and the basics of Markdown and eBook reading.
 
 ## Outline {.unnumbered}
 
 Provide a quick outline of your book content.  This content should align with your TOC.
+
+<center>
+
+**To be inserted**
+
+</center>
 
 # START HERE
 
@@ -216,6 +223,8 @@ Pandoc uses a slightly modified version of Markdown as explained here:
 
 ## ePub Conversion
 
+See <https://pandoc.org/epub.html>
+
 With Pandoc installed you can generate an ePub from VSCode with the Markdown Preview Enhanced export option menu if have pandoc and Calibre installed.
 
 You will need a cover image to test:
@@ -243,6 +252,24 @@ Warning! This document currently fails the Kindle Preview import.
 Testing in progress for compatibility corrections.
 
 That testing is part of the purpose for the creation of this document.
+
+### Add a CSS Style sheet
+
+Example style sheet can be obtained from here:
+
+<https://github.com/jgm/pandoc/blob/main/data/epub.css>
+
+add this to the pandoc conversion command
+--css=epub.css
+
+> `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output.epub --standalone --epub-cover-image=cover.png --css=epub.css`
+
+
+### Metadata
+
+Details on options for the ePub metadata as used at the markdown version  of this document.
+
+<https://pandoc.org/MANUAL.html#epub-metadata>
 
 ## MS Word docx Conversion
 
@@ -285,7 +312,7 @@ In this case explore a depth of four with an update to our prompt:
 
 ePub version of this export:
 
-> `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-depth4.epub --standalone  --epub-cover-image=cover.png --number-sections --toc-depth=4`
+> `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-depth4.epub --standalone  --epub-cover-image=cover.png --number-sections --toc-depth=4 --css=epub.css`
 
 ### Skip Numbering
 
@@ -301,7 +328,7 @@ to the headings as done in this document for front and back matter.
 
 Pandoc recommend the `{-}` version of the tag.
 
-> `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-depth4.epub --standalone --epub-cover-image=cover.png --number-sections --toc-depth=4`
+> `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-depth4.epub --standalone --epub-cover-image=cover.png --number-sections --toc-depth=4 --css=epub.css`
 
 ### Pandoc Generated TOC
 
@@ -309,11 +336,11 @@ add the command --toc to the conversion command.
 
 MS Word
 
-> `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-numbered-toc.docx --standalone --number-sections --toc --toc-depth=4`
+> `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-numbered-toc.docx --standalone --number-sections --toc --toc-depth=4 --css=epub.css`
 
 ePub
 
-> `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-depth-toc.epub --standalone --epub-cover-image=cover.png --number-sections --toc --toc-depth=4`
+> `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output-depth-toc.epub --standalone --epub-cover-image=cover.png --number-sections --toc --toc-depth=4 --css=epub.css`
 
 But now the TOC has page numbers which we don't want for eBooks.
 

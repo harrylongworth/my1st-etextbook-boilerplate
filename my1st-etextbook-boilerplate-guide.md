@@ -53,10 +53,10 @@ Amhazing Pty Ltd
     - [Out of Scope](#out-of-scope)
     - [Prerequisites](#prerequisites)
     - [Outline](#outline)
-- [Chapter 1: Start with the End in Mind](#chapter-1-start-with-the-end-in-mind)
+- [CHAPTER 1: Start with the End in Mind](#chapter-1-start-with-the-end-in-mind)
   - [Legacy of Paper](#legacy-of-paper)
-- [Chapter 2: Markdown?](#chapter-2-markdown)
-- [Chapter 3: Markdown Syntax](#chapter-3-markdown-syntax)
+- [CHAPTER 2: Markdown?](#chapter-2-markdown)
+- [CHAPTER 3: Markdown Syntax](#chapter-3-markdown-syntax)
   - [Headings `#` and `##`](#headings--and-)
   - [Escape Symbol `\`](#escape-symbol-)
   - [Bullets with `#`, `-` and `_`](#bullets-with----and-_)
@@ -76,7 +76,7 @@ Amhazing Pty Ltd
   - [Links = `<>` or ``](#links---or-)
   - [Reference Style Links](#reference-style-links)
   - [Images `![]()`](#images-)
-- [Extended Syntax](#extended-syntax)
+- [CHAPTER ?: Extended Markdown Syntax](#chapter--extended-markdown-syntax)
   - [Underlining](#underlining)
   - [Text Alignment `<center>`](#text-alignment-center)
   - [Colour](#colour)
@@ -89,14 +89,16 @@ Amhazing Pty Ltd
     - [VS Code Extension approach](#vs-code-extension-approach)
     - [Another TOC Way](#another-toc-way)
   - [Comments `[//]: #`](#comments--)
-- [Chapter 4: Pandoc Conversion](#chapter-4-pandoc-conversion)
+- [CHAPTER ?: Pandoc Conversion](#chapter--pandoc-conversion)
   - [ePub Conversion](#epub-conversion)
   - [MS Word docx Conversion](#ms-word-docx-conversion)
-- [Chapter 5: Conventions](#chapter-5-conventions)
+- [CHAPTER 5: Conventions](#chapter-5-conventions)
   - [Formatting](#formatting)
   - [Language](#language)
 - [Chapter 6: Testing](#chapter-6-testing)
-- [End Matter](#end-matter)
+  - [Kindle Create Testing](#kindle-create-testing)
+  - [Kindle Preview Testing](#kindle-preview-testing)
+- [END Matter](#end-matter)
   - [About the Author](#about-the-author)
   - [Resources and Links](#resources-and-links)
     - [Markdown](#markdown)
@@ -249,7 +251,7 @@ I expect readers of this guide to have a technical background.
 
 Provide a quick outline of your book content.  This content should align with your TOC.
 
-# Chapter 1: Start with the End in Mind
+# CHAPTER 1: Start with the End in Mind
 
 What should every eTextbook contain?
 
@@ -283,7 +285,7 @@ So what are the format capabilities we expect for modern electronic reflow textb
 
 Lets start by exploring the use of Markdown.
 
-# Chapter 2: Markdown?
+# CHAPTER 2: Markdown?
 
 ePub is basically HTML and CSS.  But no one wants to think about writing HTML and CSS whilst trying to brain dump.
 
@@ -301,7 +303,7 @@ So to that end I focus on the use of Markdown for text content formatting and th
 
 You can grab the Markdown version of this document / template from the GitHub for this project.  See resources section at the end for the link.
 
-# Chapter 3: Markdown Syntax
+# CHAPTER 3: Markdown Syntax
 
 Whilst the Markdown is not the point of this book, I include the content below as an example of each of the various capabilities we expect to be able to show in an ePub eTextbook.
 
@@ -650,7 +652,7 @@ then later:
 
 -------------------------------
 
-# Extended Syntax
+# CHAPTER ?: Extended Markdown Syntax
 
 Source for most of this is the markdown guide Hacks page.
 
@@ -817,7 +819,7 @@ looks like:
 
 [//]: # (Comment text in here)
 
-# Chapter 4: Pandoc Conversion
+# CHAPTER ?: Pandoc Conversion
 
 Pandoc is the tool I use to convert Markdown into eBooks in the form of an ePub that I can then upload to Kindle.
 
@@ -863,12 +865,13 @@ which for this document and github repo is:
 
 > `pandoc my1st-etextbook-boilerplate-guide.md -o dist/output.docx`
 
-# Chapter 5: Conventions
+# CHAPTER 5: Conventions
 
 Here are some example conventions for eTextbooks and the use of Markdown.
 
 ## Formatting
 
+- I format chapter headings with all upper case so that I can see them during Kindle Create conversion testing.
 - Avoid underlining.  That's for hyper links.
 - Avoid comments in brackets - it breaks the flow and because we are focusing on Markdown brackets are used to indicate links and images.
 - avoid colored text.  It won't show very well on grayscale eInk devices.
@@ -893,7 +896,28 @@ How do we test this works?
 - Increase and reduce font size
 - Test Dark and Light mode on tablets and phones.
 
-# End Matter
+## Kindle Create Testing
+
+The kindle create testing process used for this document is a two step process.
+
+Pandoc is used to create a docx format version which is then imported into Kindle Create. 
+
+No modifications are made in Word to that document. Although they could be, that would not be the point of using Markdown as our master format.
+
+Kindle Create conversion has limitations as discussed below:
+
+- Conversion of document structure below Heading 1 is introduced as all heading 1 level unless you unselect the lower level headings.  
+- The table of contents creation option in Kindle Create doesn't support structure below Heading 1 style.
+- Kindle strips monospace formatting out of word documents.
+- Block quote format doesn't convert.
+
+## Kindle Preview Testing
+
+This document - v0.1 - fails test.  Kindle Preview doesn't import successfully as you can see from the conversion log.
+
+Testing in progress.
+
+# END Matter
 
 This is the sort of content that Kindle Create with the addition of Resources and References headings and Appendix.
 

@@ -3,8 +3,7 @@ My1st eTextbook Boilerplate in 2025 by Harry Longworth - Ebook Textbook Template
 
 The actual guide can be found in the repo here:
 
-[my1st eTextBook boilerplate](./my1st-etextbook-boilerplate.md)
-
+[my1st eTextBook boilerplate](./my1st-etextbook-boilerplate-guide.md)
 The master copy of this guide is a Markdown file.
 
 Test conversions can be found in the dist folder.

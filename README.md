@@ -1,5 +1,5 @@
 # my1st-etextbook-boilerplate
-My1st eTextbook Boilerplate in 2025 by Harry Longworth - Ebook Textbook Template, Boilerplate and Example Document Structuring using Markdown, VSCode, Pandoc and Github for Kindle Self Publishing
+My1st eTextbook Boilerplate in 2025 by Harry Longworth - Ebook Textbook Template, Boilerplate and Example Document Structuring using Pandoc and Github for Kindle Self Publishing
 
 The actual guide can be found in the repo here:
 
@@ -49,7 +49,10 @@ Details below on Pandoc commands used to build output filea from the master temp
 - seperate repo used to resolve Kindle Preview test failure
 - will provide ajortly
 
+---
 ## Project Backlog:
+
+'Move to docs folder'
 
 - [ ] Kindle Preview import fails.
 - [ ] Convert to ePub process improvement.

@@ -350,9 +350,22 @@ So have to do an intermediate .md file creation!
 
 and then commands above without the toc components
 
+# CSS Formatting
+
+Using an external CSS file you can configure the format of the Markdown file for export.
+
+Key configurations I make in that file include:
+
+- Paragraph spacing.
+- Paragraph First line indent.
+- Heading formats.
+- Table format?
+- Pop out boxes?
+- Code formatting?
+
 # TESTING
 
-How do we test this works?
+How do we test this template works?
 
 - convert to a MS Word docx so you can feed into Kindle Create to get an idea of where the formatting issues are that require the use of ePub.
 - test in Kindle preview.  You'll have to bug hunt your format if you start this testing with a complex format.  Best to start testing here early!  For example images and CSS issues.
@@ -388,7 +401,12 @@ Testing in progress.
 
 # END MATTER {-}
 
-This is the sort of content that Kindle Create with the addition of Resources and References headings and Appendix.
+This is the sort of content that Kindle Create suggests as "End Matter".  I would suggest moving the request a review to the front.
+
+Additional sections I would use include:
+
+- Resources and References.
+- Appendices.
 
 ## About the Author {-}
 

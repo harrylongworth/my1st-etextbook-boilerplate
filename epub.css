@@ -23,7 +23,7 @@ html {
   color: #1a1a1a;
 }
 p {
-  text-indent: 2em;
+  text-indent: 2em; /* indent first line of paragraph if not zero! */
   margin: 1em 0;
   widows: 2;
   orphans: 2;
